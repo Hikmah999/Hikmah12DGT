@@ -1,0 +1,77 @@
+[gd_scene format=3 uid="uid://cvkvtb25je5tc"]
+
+[ext_resource type="Script" uid="uid://lavy3grbre3s" path="res://settingbutton.gd" id="1_lti8b"]
+[ext_resource type="FontFile" uid="uid://kakemuqg7gk7" path="res://I-pixel-u.ttf" id="1_mae5d"]
+[ext_resource type="Script" uid="uid://j3dj88fhab1p" path="res://playbutton.gd" id="1_ouk20"]
+
+[node name="menu" type="Control" unique_id=135649398]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1437046636]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.50534403, 0.5053441, 0.50534403, 1)
+
+[node name="mainmenubutton" type="VBoxContainer" parent="." unique_id=296615031]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -197.5
+offset_top = -55.0
+offset_right = 197.5
+offset_bottom = 241.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 11
+
+[node name="playbutton" type="Button" parent="mainmenubutton" unique_id=223854293]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("1_mae5d")
+theme_override_font_sizes/font_size = 23
+text = "PLAY: TUTORIAL (ON/OFF)"
+script = ExtResource("1_ouk20")
+
+[node name="modesbutton" type="Button" parent="mainmenubutton" unique_id=491013944]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("1_mae5d")
+theme_override_font_sizes/font_size = 23
+text = "MODES: EASY/HARD"
+
+[node name="settingbutton" type="Button" parent="mainmenubutton" unique_id=1611002398]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("1_mae5d")
+theme_override_font_sizes/font_size = 23
+text = "SETTING"
+script = ExtResource("1_lti8b")
+
+[node name="logo" type="Label" parent="." unique_id=623871554]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -84.0
+offset_top = 112.0
+offset_right = 82.0
+offset_bottom = 195.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("1_mae5d")
+theme_override_font_sizes/font_size = 100
+text = "MENU"
+
+[connection signal="pressed" from="mainmenubutton/playbutton" to="mainmenubutton/playbutton" method="_on_pressed"]
+[connection signal="pressed" from="mainmenubutton/settingbutton" to="mainmenubutton/settingbutton" method="_on_pressed"]

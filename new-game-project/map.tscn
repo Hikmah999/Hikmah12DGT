@@ -1,0 +1,80 @@
+[gd_scene format=3 uid="uid://2i40l6ds35ry"]
+
+[ext_resource type="FontFile" uid="uid://kakemuqg7gk7" path="res://I-pixel-u.ttf" id="1_c7s6e"]
+
+[node name="Map" type="Control" unique_id=1549261769]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=301926358]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.20511743, 0.20511743, 0.20511743, 1)
+
+[node name="Button" type="Button" parent="." unique_id=1549769767]
+layout_mode = 0
+offset_left = 169.0
+offset_top = 339.0
+offset_right = 292.0
+offset_bottom = 429.0
+theme_override_fonts/font = ExtResource("1_c7s6e")
+theme_override_font_sizes/font_size = 50
+text = "1"
+
+[node name="Button2" type="Button" parent="." unique_id=1558336174]
+layout_mode = 0
+offset_left = 339.0
+offset_top = 340.0
+offset_right = 462.0
+offset_bottom = 430.0
+theme_override_fonts/font = ExtResource("1_c7s6e")
+theme_override_font_sizes/font_size = 50
+text = "2"
+
+[node name="Button3" type="Button" parent="." unique_id=528200395]
+layout_mode = 0
+offset_left = 511.0
+offset_top = 340.0
+offset_right = 634.0
+offset_bottom = 430.0
+theme_override_fonts/font = ExtResource("1_c7s6e")
+theme_override_font_sizes/font_size = 50
+text = "3"
+
+[node name="Button4" type="Button" parent="." unique_id=887340455]
+layout_mode = 0
+offset_left = 680.0
+offset_top = 340.0
+offset_right = 803.0
+offset_bottom = 430.0
+theme_override_fonts/font = ExtResource("1_c7s6e")
+theme_override_font_sizes/font_size = 50
+text = "4"
+
+[node name="Button5" type="Button" parent="." unique_id=1482645430]
+layout_mode = 0
+offset_left = 851.0
+offset_top = 340.0
+offset_right = 974.0
+offset_bottom = 430.0
+theme_override_fonts/font = ExtResource("1_c7s6e")
+theme_override_font_sizes/font_size = 50
+text = "5"
+
+[node name="Label" type="Label" parent="." unique_id=1746241107]
+layout_mode = 0
+offset_left = 463.0
+offset_top = 81.0
+offset_right = 675.0
+offset_bottom = 218.0
+theme_override_fonts/font = ExtResource("1_c7s6e")
+theme_override_font_sizes/font_size = 100
+text = "MAP"
