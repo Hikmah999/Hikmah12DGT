@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://l1dhtqji1d6x"]
 
+[ext_resource type="Script" uid="uid://cga8t7fc2xrgi" path="res://level_1_map.gd" id="1_3hls8"]
+
 [node name="Level 1" type="Control" unique_id=74430685]
 layout_mode = 3
 anchors_preset = 15
@@ -7,3 +9,23 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1468039462]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.19793725, 0.19793722, 0.19793722, 1)
+
+[node name="level 1 map" type="Button" parent="." unique_id=1009447165]
+layout_mode = 0
+offset_left = 1075.0
+offset_top = 12.0
+offset_right = 1138.0
+offset_bottom = 84.0
+text = "map"
+script = ExtResource("1_3hls8")
+
+[connection signal="pressed" from="level 1 map" to="level 1 map" method="_on_pressed"]
