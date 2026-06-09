@@ -1,0 +1,160 @@
+[gd_scene format=3 uid="uid://dkbgq1liuk838"]
+
+[ext_resource type="Script" uid="uid://doxu8k4sp6t4y" path="res://buttonback.gd" id="1_a42w7"]
+[ext_resource type="Script" uid="uid://dhvrf6hy11ojm" path="res://remapper.gd" id="2_110nh"]
+
+[node name="setting" type="Control" unique_id=306662265]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -471.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1206488935]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 474.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.49354547, 0.49354553, 0.49354553, 1)
+
+[node name="Label1" type="Label" parent="." unique_id=625417302]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 106.5
+offset_top = 28.0
+offset_right = 335.5
+offset_bottom = 142.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 60
+text = "settings"
+
+[node name="Label2" type="Label" parent="." unique_id=1474380279]
+layout_mode = 0
+offset_left = 90.0
+offset_top = 151.0
+offset_right = 265.0
+offset_bottom = 577.0
+theme_override_font_sizes/font_size = 36
+text = "Jump: 
+
+Down:
+
+Right: 
+
+
+"
+
+[node name="Label3" type="Label" parent="." unique_id=521612642]
+layout_mode = 0
+offset_left = 622.0
+offset_top = 144.0
+offset_right = 797.0
+offset_bottom = 459.0
+theme_override_font_sizes/font_size = 36
+text = "Left: 
+
+Throw: 
+
+
+"
+
+[node name="Buttonback" type="Button" parent="." unique_id=373065260]
+layout_mode = 0
+offset_left = 469.0
+offset_top = 544.0
+offset_right = 663.0
+offset_bottom = 619.0
+theme_override_font_sizes/font_size = 25
+text = "Back"
+script = ExtResource("1_a42w7")
+
+[node name="music" type="Control" parent="." unique_id=868573378]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="music" unique_id=1094938848]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 18.922
+anchor_top = 7.3970003
+anchor_right = 18.922
+anchor_bottom = 7.3970003
+offset_left = 135.12
+offset_top = 252.12
+offset_right = 313.12
+offset_bottom = 337.12
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 11
+
+[node name="CheckButton" type="CheckButton" parent="music/VBoxContainer" unique_id=1431663417]
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0.12955844, 0.12955847, 0.12955844, 1)
+theme_override_constants/outline_size = 0
+theme_override_font_sizes/font_size = 32
+text = "Music:"
+
+[node name="InputMapper" type="Control" parent="." unique_id=2096301588]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="up" type="Button" parent="InputMapper" unique_id=637015733]
+layout_mode = 0
+offset_left = 241.0
+offset_top = 156.0
+offset_right = 515.0
+offset_bottom = 228.0
+script = ExtResource("2_110nh")
+action = "Up"
+
+[node name="down" type="Button" parent="InputMapper" unique_id=1305236727]
+layout_mode = 0
+offset_left = 242.0
+offset_top = 253.0
+offset_right = 519.0
+offset_bottom = 324.0
+script = ExtResource("2_110nh")
+action = "Down"
+
+[node name="Right" type="Button" parent="InputMapper" unique_id=1063707561]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 7.2190003
+anchor_top = 7.2120004
+anchor_right = 7.2190003
+anchor_bottom = 7.2120004
+offset_left = -47.76001
+offset_top = 65.51999
+offset_right = 229.23999
+offset_bottom = 136.51999
+script = ExtResource("2_110nh")
+action = "Right"
+
+[node name="Left" type="Button" parent="InputMapper" unique_id=726724282]
+layout_mode = 0
+offset_left = 795.0
+offset_top = 156.0
+offset_right = 1072.0
+offset_bottom = 227.0
+script = ExtResource("2_110nh")
+action = "Left"
+
+[node name="Throw" type="Button" parent="InputMapper" unique_id=725676368]
+layout_mode = 0
+offset_left = 795.0
+offset_top = 248.0
+offset_right = 1072.0
+offset_bottom = 319.0
+script = ExtResource("2_110nh")
+action = "Throw"
+
+[connection signal="pressed" from="Buttonback" to="Buttonback" method="_on_pressed"]
