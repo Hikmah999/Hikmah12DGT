@@ -1,0 +1,50 @@
+[gd_scene format=3 uid="uid://4esvy86q8h8w"]
+
+[ext_resource type="Script" uid="uid://b6iedmfe5u7vh" path="res://level_3_map.gd" id="1_sg6r2"]
+
+[node name="Characters" type="Control" unique_id=1431580309]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1781503932]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.39308554, 0.3930855, 0.39308548, 1)
+
+[node name="Label" type="Label" parent="." unique_id=452775118]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="ColorRect2" type="ColorRect" parent="." unique_id=1513259543]
+layout_mode = 0
+offset_left = 241.0
+offset_top = 61.0
+offset_right = 561.0
+offset_bottom = 458.0
+
+[node name="ColorRect2" type="ColorRect" parent="ColorRect2" unique_id=362148127]
+layout_mode = 0
+offset_left = 380.0
+offset_top = 1.0
+offset_right = 700.0
+offset_bottom = 398.0
+
+[node name="character map" type="Button" parent="." unique_id=1303265817]
+layout_mode = 0
+offset_left = 1075.0
+offset_top = 12.0
+offset_right = 1138.0
+offset_bottom = 84.0
+text = "map"
+script = ExtResource("1_sg6r2")
+
+[connection signal="pressed" from="character map" to="character map" method="_on_pressed"]
