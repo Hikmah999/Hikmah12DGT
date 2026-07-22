@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://kuy1tn5gqnoi"
-path="res://.godot/imported/brighteyes png.png-d84ebd74823b84ee0e5f838c0849aca0.ctex"
+uid="uid://b7xbmg1a5sqin"
+path="res://.godot/imported/shed-chicken IDLE-1.png.png-fec443521942f4d933a9d8f74f0c0216.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://brighteyes png.png"
-dest_files=["res://.godot/imported/brighteyes png.png-d84ebd74823b84ee0e5f838c0849aca0.ctex"]
+source_file="res://shed-chicken IDLE-1.png.png"
+dest_files=["res://.godot/imported/shed-chicken IDLE-1.png.png-fec443521942f4d933a9d8f74f0c0216.ctex"]
 
 [params]
 

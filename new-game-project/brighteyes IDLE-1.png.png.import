@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://js88my7kxc2n"
-path="res://.godot/imported/brighteyes IDLE.png-3bfc40aebb56605ded11683cea9dbe6d.ctex"
+uid="uid://dtu3g5lbomji0"
+path="res://.godot/imported/brighteyes IDLE-1.png.png-31691b5df84d2997af0be9a2a6985823.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://brighteyes IDLE.png"
-dest_files=["res://.godot/imported/brighteyes IDLE.png-3bfc40aebb56605ded11683cea9dbe6d.ctex"]
+source_file="res://brighteyes IDLE-1.png.png"
+dest_files=["res://.godot/imported/brighteyes IDLE-1.png.png-31691b5df84d2997af0be9a2a6985823.ctex"]
 
 [params]
 
