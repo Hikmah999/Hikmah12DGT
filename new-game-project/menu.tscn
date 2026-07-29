@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://lavy3grbre3s" path="res://settingbutton.gd" id="1_lti8b"]
 [ext_resource type="FontFile" uid="uid://kakemuqg7gk7" path="res://I-pixel-u.ttf" id="1_mae5d"]
 [ext_resource type="Script" uid="uid://j3dj88fhab1p" path="res://playbutton.gd" id="1_ouk20"]
+[ext_resource type="Script" uid="uid://c7kalgmmcnpef" path="res://levels.gd" id="2_mae5d"]
 
 [node name="menu" type="Control" unique_id=135649398]
 layout_mode = 3
@@ -44,12 +45,13 @@ theme_override_font_sizes/font_size = 23
 text = "PLAY: TUTORIAL (ON/OFF)"
 script = ExtResource("1_ouk20")
 
-[node name="modesbutton" type="Button" parent="mainmenubutton" unique_id=491013944]
+[node name="levels" type="Button" parent="mainmenubutton" unique_id=491013944]
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_fonts/font = ExtResource("1_mae5d")
 theme_override_font_sizes/font_size = 23
-text = "MODES: EASY/HARD"
+text = "LEVELS"
+script = ExtResource("2_mae5d")
 
 [node name="settingbutton" type="Button" parent="mainmenubutton" unique_id=1611002398]
 layout_mode = 2
@@ -74,4 +76,5 @@ theme_override_font_sizes/font_size = 100
 text = "MENU"
 
 [connection signal="pressed" from="mainmenubutton/playbutton" to="mainmenubutton/playbutton" method="_on_pressed"]
+[connection signal="pressed" from="mainmenubutton/levels" to="mainmenubutton/levels" method="_on_pressed"]
 [connection signal="pressed" from="mainmenubutton/settingbutton" to="mainmenubutton/settingbutton" method="_on_pressed"]

@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://d30ebo7uakvax"]
+
+[ext_resource type="Texture2D" uid="uid://dtu3g5lbomji0" path="res://characters/brighteyes IDLE-1.png (2).png" id="1_f50pn"]
+[ext_resource type="Script" uid="uid://cfeboa1ggx0ee" path="res://Player1Controller.gd" id="1_ij6vw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ij6vw"]
+size = Vector2(54, 93)
+
+[node name="Player1" type="CharacterBody2D" unique_id=1951443597]
+script = ExtResource("1_ij6vw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=680325056]
+position = Vector2(34, 66.5)
+shape = SubResource("RectangleShape2D_ij6vw")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1390365644]
+position = Vector2(32, 66)
+texture = ExtResource("1_f50pn")

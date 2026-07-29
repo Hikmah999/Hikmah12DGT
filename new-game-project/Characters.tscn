@@ -1,6 +1,41 @@
 [gd_scene format=3 uid="uid://4esvy86q8h8w"]
 
-[ext_resource type="Script" uid="uid://b6iedmfe5u7vh" path="res://level_3_map.gd" id="1_sg6r2"]
+[ext_resource type="FontFile" uid="uid://kakemuqg7gk7" path="res://I-pixel-u.ttf" id="1_fw52b"]
+[ext_resource type="Script" uid="uid://bnu1enx47kf7c" path="res://character_select.gd" id="3_v3dpv"]
+[ext_resource type="Texture2D" uid="uid://djwmutinmm5of" path="res://characters/brighteyes IDLE-1.png.png" id="4_ghmnu"]
+[ext_resource type="Texture2D" uid="uid://b7xbmg1a5sqin" path="res://scenes/shed-chicken IDLE-1.png.png" id="4_ryabp"]
+[ext_resource type="Script" uid="uid://c1cm6poc7tnw2" path="res://scenes/brighteyes_idle.gd" id="5_ryabp"]
+[ext_resource type="Script" uid="uid://b1pfxwooeml5d" path="res://scenes/shed_chicken_idle.gd" id="6_ghmnu"]
+
+[sub_resource type="GDScript" id="GDScript_fw52b"]
+script/source = "extends Button
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+
+
+func _on_pressed() -> void:
+	get_tree().change_scene_to_file(\"res://Level_1.tscn\")
+
+
+func _on_brighteyes_pressed() -> void:
+	pass # Replace with function body.
+
+
+func _on_shedchicken_pressed() -> void:
+	pass # Replace with function body.
+
+
+func _on_shed_chicken_idle_pressed() -> void:
+	pass # Replace with function body.
+"
 
 [node name="Characters" type="Control" unique_id=1431580309]
 layout_mode = 3
@@ -21,22 +56,29 @@ color = Color(0.39308554, 0.3930855, 0.39308548, 1)
 
 [node name="Label" type="Label" parent="." unique_id=452775118]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
+offset_left = 343.0
+offset_top = 24.0
+offset_right = 811.0
+offset_bottom = 126.0
+theme_override_fonts/font = ExtResource("1_fw52b")
+theme_override_font_sizes/font_size = 36
+text = "CHOOSE A CHARACTER"
+
+[node name="ColorRect3" type="ColorRect" parent="." unique_id=362148127]
+layout_mode = 0
+offset_left = 607.0
+offset_top = 99.5
+offset_right = 927.0
+offset_bottom = 496.5
+color = Color(0.24705882, 0.24705882, 0.37254903, 1)
 
 [node name="ColorRect2" type="ColorRect" parent="." unique_id=1513259543]
 layout_mode = 0
-offset_left = 241.0
-offset_top = 61.0
-offset_right = 561.0
-offset_bottom = 458.0
-
-[node name="ColorRect2" type="ColorRect" parent="ColorRect2" unique_id=362148127]
-layout_mode = 0
-offset_left = 380.0
-offset_top = 1.0
-offset_right = 700.0
-offset_bottom = 398.0
+offset_left = 226.99997
+offset_top = 98.5
+offset_right = 547.0
+offset_bottom = 495.5
+color = Color(0.24573782, 0.24901783, 0.37368575, 1)
 
 [node name="character map" type="Button" parent="." unique_id=1303265817]
 layout_mode = 0
@@ -45,6 +87,62 @@ offset_top = 12.0
 offset_right = 1138.0
 offset_bottom = 84.0
 text = "map"
-script = ExtResource("1_sg6r2")
+script = SubResource("GDScript_fw52b")
+
+[node name="Label" type="Label" parent="character map" unique_id=2118904356]
+layout_mode = 0
+offset_left = -797.0
+offset_top = 110.0
+offset_right = -572.0
+offset_bottom = 148.0
+theme_override_fonts/font = ExtResource("1_fw52b")
+theme_override_font_sizes/font_size = 30
+text = "BRIGHTEYES"
+
+[node name="Label2" type="Label" parent="character map" unique_id=1712565915]
+layout_mode = 0
+offset_left = -437.0
+offset_top = 109.0
+offset_right = -174.0
+offset_bottom = 147.0
+theme_override_fonts/font = ExtResource("1_fw52b")
+theme_override_font_sizes/font_size = 30
+text = "SHED CHICKEN"
+
+[node name="Character select" type="Control" parent="." unique_id=1672889076]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("3_v3dpv")
+
+[node name="ShedChickenIdle1_png" type="Sprite2D" parent="Character select" unique_id=124429965]
+position = Vector2(770.00006, 320.00003)
+scale = Vector2(3.0489867, 3.0489867)
+texture = ExtResource("4_ryabp")
+
+[node name="BrighteyesIdle1_png" type="Sprite2D" parent="Character select" unique_id=663952892]
+position = Vector2(377, 323)
+scale = Vector2(3.0945942, 3.0945942)
+texture = ExtResource("4_ghmnu")
+
+[node name="BrighteyesIdle" type="Button" parent="Character select" unique_id=851299021]
+layout_mode = 0
+offset_left = 316.0
+offset_top = 530.0
+offset_right = 446.0
+offset_bottom = 564.0
+text = "SELECT"
+script = ExtResource("5_ryabp")
+
+[node name="ShedChickenIdle" type="Button" parent="Character select" unique_id=520540000]
+layout_mode = 0
+offset_left = 713.0
+offset_top = 526.0
+offset_right = 843.0
+offset_bottom = 560.0
+text = "SELECT"
+script = ExtResource("6_ghmnu")
 
 [connection signal="pressed" from="character map" to="character map" method="_on_pressed"]
+[connection signal="pressed" from="Character select/BrighteyesIdle" to="Character select/BrighteyesIdle" method="_on_pressed"]
+[connection signal="pressed" from="Character select/ShedChickenIdle" to="Character select/ShedChickenIdle" method="_on_pressed"]
