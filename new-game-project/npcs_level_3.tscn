@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://hujc0gnhqeja"]
+
+[ext_resource type="Script" uid="uid://dlsermthjssgk" path="res://npc_l_3_1.gd" id="1_h67ps"]
+[ext_resource type="Texture2D" uid="uid://dqdjve60hrtx7" path="res://character level 3/Blox-Bot IDLE-1.png.png" id="2_w1j5r"]
+[ext_resource type="Texture2D" uid="uid://d3omjwc0r6j5j" path="res://character level 3/Blox-Bot IDLE-2.png.png" id="3_7uuu2"]
+[ext_resource type="Texture2D" uid="uid://dpcjv1hktdfas" path="res://character level 3/Blox-Bot IDLE-3.png.png" id="4_660i3"]
+[ext_resource type="Texture2D" uid="uid://p7i0a2lkbcx0" path="res://character level 3/Blox-Bot IDLE-4.png.png" id="5_lhwoa"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_fdxdt"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_w1j5r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_7uuu2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_660i3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_lhwoa")
+}],
+"loop": true,
+"name": &"standing npcs",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f7rwd"]
+size = Vector2(76, 134)
+
+[node name="npcslevel3" type="Node2D" unique_id=2134047930]
+
+[node name="npc l3 1" type="CharacterBody2D" parent="." unique_id=208944403]
+script = ExtResource("1_h67ps")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="npc l3 1" unique_id=847087054]
+position = Vector2(198, 320)
+sprite_frames = SubResource("SpriteFrames_fdxdt")
+animation = &"standing npcs"
+autoplay = "standing npcs"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="npc l3 1" unique_id=1010079338]
+position = Vector2(200, 314)
+shape = SubResource("RectangleShape2D_f7rwd")
+
+[node name="npc L3 2" type="CharacterBody2D" parent="." unique_id=402867423]

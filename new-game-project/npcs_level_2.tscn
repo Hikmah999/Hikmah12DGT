@@ -1,0 +1,130 @@
+[gd_scene format=3 uid="uid://cvo8w2i4qyfnf"]
+
+[ext_resource type="Script" uid="uid://bqe7y6bfr35nq" path="res://npc_l_2_1.gd" id="1_30c74"]
+[ext_resource type="Texture2D" uid="uid://c7t7h0ulfjk0q" path="res://characters/Elliot IDLE-1.png.png" id="2_cm08s"]
+[ext_resource type="Texture2D" uid="uid://bmmo31pkqy6am" path="res://characters/Elliot IDLE-2.png.png" id="3_hjxss"]
+[ext_resource type="Texture2D" uid="uid://da5udhdjnm0ka" path="res://characters/Elliot IDLE-3.png.png" id="4_ytvxq"]
+[ext_resource type="Texture2D" uid="uid://bhpwh2n41scs4" path="res://characters/Elliot IDLE-4.png.png" id="5_8kbhw"]
+[ext_resource type="Script" uid="uid://df65dv62by483" path="res://npc_l_2_2.gd" id="6_kccid"]
+[ext_resource type="Texture2D" uid="uid://d132ruul5qdiu" path="res://characters/noob IDLE-1.png.png" id="7_qow7i"]
+[ext_resource type="Texture2D" uid="uid://x3ht5ja8o4gr" path="res://characters/noob IDLE-2.png.png" id="8_v0g2u"]
+[ext_resource type="Texture2D" uid="uid://b4lbu6jn8quyo" path="res://characters/noob IDLE-3.png.png" id="9_e7m7q"]
+[ext_resource type="Texture2D" uid="uid://did5e7iddy0u4" path="res://characters/noob IDLE-4.png.png" id="10_p7h56"]
+[ext_resource type="Script" uid="uid://ha5n3wpxii74" path="res://npc_l_2_3.gd" id="11_o6bf4"]
+[ext_resource type="Texture2D" uid="uid://qx4q34qgt5ty" path="res://characters/007e7 idle-1.png.png" id="12_c23d6"]
+[ext_resource type="Texture2D" uid="uid://c4srytfuuadwv" path="res://characters/007e7 idle-2.png.png" id="13_6b56u"]
+[ext_resource type="Texture2D" uid="uid://cwfuhv8corac4" path="res://characters/007e7 idle-3.png.png" id="14_dq1sf"]
+[ext_resource type="Texture2D" uid="uid://bul0b0wbiq8fh" path="res://characters/007e7 idle-4.png.png" id="15_nx37r"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_67lvm"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_cm08s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_hjxss")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_ytvxq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_8kbhw")
+}],
+"loop": true,
+"name": &"standing npcs",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_inqu3"]
+size = Vector2(61, 114.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5hedi"]
+size = Vector2(61.5, 123.875)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_i2o0l"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_qow7i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_v0g2u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_e7m7q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_p7h56")
+}],
+"loop": true,
+"name": &"standing npcs",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6qsdt"]
+size = Vector2(62, 122)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_t6kcd"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_c23d6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_6b56u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_dq1sf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_nx37r")
+}],
+"loop": true,
+"name": &"standing npcs",
+"speed": 5.0
+}]
+
+[node name="npcs level2" type="Node2D" unique_id=959610073]
+
+[node name="npc L2 1" type="CharacterBody2D" parent="." unique_id=497470991]
+position = Vector2(253, 166)
+script = ExtResource("1_30c74")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="npc L2 1" unique_id=1632803335]
+position = Vector2(11, 102)
+sprite_frames = SubResource("SpriteFrames_67lvm")
+animation = &"standing npcs"
+autoplay = "standing npcs"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="npc L2 1" unique_id=1737406517]
+position = Vector2(12, 93.25)
+shape = SubResource("RectangleShape2D_inqu3")
+
+[node name="npc L2 2" type="CharacterBody2D" parent="." unique_id=989799734]
+position = Vector2(404, 183)
+script = ExtResource("6_kccid")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="npc L2 2" unique_id=1556951608]
+position = Vector2(9, 73.9375)
+shape = SubResource("RectangleShape2D_5hedi")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="npc L2 2" unique_id=13938163]
+position = Vector2(9, 80)
+sprite_frames = SubResource("SpriteFrames_i2o0l")
+animation = &"standing npcs"
+autoplay = "standing npcs"
+
+[node name="npc L2 3" type="CharacterBody2D" parent="." unique_id=130319486]
+position = Vector2(551, 197)
+script = ExtResource("11_o6bf4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="npc L2 3" unique_id=700670897]
+position = Vector2(11, 63)
+shape = SubResource("RectangleShape2D_6qsdt")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="npc L2 3" unique_id=727389424]
+position = Vector2(11, 71)
+sprite_frames = SubResource("SpriteFrames_t6kcd")
+animation = &"standing npcs"
+autoplay = "standing npcs"
