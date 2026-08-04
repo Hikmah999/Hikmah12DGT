@@ -6,6 +6,7 @@
 [ext_resource type="Script" uid="uid://b6v0rjcksllau" path="res://npc_l_1_2.gd" id="5_iqnpa"]
 [ext_resource type="Texture2D" uid="uid://dl4km0yjrn3yx" path="res://characters/Taph IDLE-4.png.png" id="5_pxaxd"]
 [ext_resource type="Texture2D" uid="uid://2ykdwyoou4wy" path="res://characters/two time IDLE-1.png.png" id="6_gmq6j"]
+[ext_resource type="Texture2D" uid="uid://chyv2k4lyi7f7" path="res://character level 3/Happy Two time-1.png.png" id="6_sn0xf"]
 [ext_resource type="Texture2D" uid="uid://cf818oiwxr1wg" path="res://characters/two time IDLE-2.png.png" id="7_sn0xf"]
 [ext_resource type="Texture2D" uid="uid://dn2r4j0m0n2jk" path="res://characters/two time IDLE-3.png.png" id="8_dpm1w"]
 [ext_resource type="Texture2D" uid="uid://dxnbhicsbivh1" path="res://characters/two time IDLE-4.png.png" id="9_41vp0"]
@@ -23,6 +24,9 @@ func _physics_process(_delta: float) -> void:
 	velocity = Vector2.ZERO
 	move_and_slide()
 "
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gmq6j"]
+size = Vector2(71, 124)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_iqnpa"]
 animations = [{
@@ -44,11 +48,19 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_gmq6j"]
-size = Vector2(71, 124)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6kacy"]
+size = Vector2(59, 117.5)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_4xp6q"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_sn0xf")
+}],
+"loop": true,
+"name": &"happy npcs image ",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("6_gmq6j")
@@ -66,17 +78,18 @@ animations = [{
 "texture": ExtResource("10_v0qjv")
 }],
 "loop": true,
-"name": &"standing npcs",
+"name": &"sad npc aniamtion",
 "speed": 5.0
 }]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_6kacy"]
-size = Vector2(59, 117.5)
 
 [node name="npc" type="Node2D" unique_id=1996645054]
 
 [node name="npcL1 1" type="CharacterBody2D" parent="." unique_id=1112142747]
 script = SubResource("GDScript_tsis6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="npcL1 1" unique_id=1438554901]
+position = Vector2(218, 236)
+shape = SubResource("RectangleShape2D_gmq6j")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="npcL1 1" unique_id=640633412]
 position = Vector2(221, 245)
@@ -84,19 +97,15 @@ sprite_frames = SubResource("SpriteFrames_iqnpa")
 animation = &"standing npcs"
 autoplay = "standing npcs"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="npcL1 1" unique_id=1438554901]
-position = Vector2(218, 236)
-shape = SubResource("RectangleShape2D_gmq6j")
-
 [node name="npcL1 2" type="CharacterBody2D" parent="." unique_id=1651975392]
 script = ExtResource("5_iqnpa")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="npcL1 2" unique_id=1404312326]
-position = Vector2(389, 251)
-sprite_frames = SubResource("SpriteFrames_4xp6q")
-animation = &"standing npcs"
-autoplay = "standing npcs"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="npcL1 2" unique_id=692719501]
 position = Vector2(394, 237)
 shape = SubResource("RectangleShape2D_6kacy")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="npcL1 2" unique_id=1404312326]
+position = Vector2(394, 241)
+sprite_frames = SubResource("SpriteFrames_4xp6q")
+animation = &"sad npc aniamtion"
+autoplay = "sad npc aniamtion"

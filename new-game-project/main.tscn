@@ -18,7 +18,7 @@ distance = -313.05255
 script = ExtResource("1_0xm2m")
 
 [node name="Player1" parent="." unique_id=1951443597 instance=ExtResource("1_ig7tw")]
-position = Vector2(129, 79)
+position = Vector2(133, 99)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=2027698288]
 

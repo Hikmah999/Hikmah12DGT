@@ -16,6 +16,9 @@
 [ext_resource type="Texture2D" uid="uid://cwfuhv8corac4" path="res://characters/007e7 idle-3.png.png" id="14_dq1sf"]
 [ext_resource type="Texture2D" uid="uid://bul0b0wbiq8fh" path="res://characters/007e7 idle-4.png.png" id="15_nx37r"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_inqu3"]
+size = Vector2(61, 114.5)
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_67lvm"]
 animations = [{
 "frames": [{
@@ -35,9 +38,6 @@ animations = [{
 "name": &"standing npcs",
 "speed": 5.0
 }]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_inqu3"]
-size = Vector2(61, 114.5)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5hedi"]
 size = Vector2(61.5, 123.875)
@@ -91,15 +91,15 @@ animations = [{
 position = Vector2(253, 166)
 script = ExtResource("1_30c74")
 
+[node name="CollisionShape2D" type="CollisionShape2D" parent="npc L2 1" unique_id=1737406517]
+position = Vector2(12, 93.25)
+shape = SubResource("RectangleShape2D_inqu3")
+
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="npc L2 1" unique_id=1632803335]
 position = Vector2(11, 102)
 sprite_frames = SubResource("SpriteFrames_67lvm")
 animation = &"standing npcs"
 autoplay = "standing npcs"
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="npc L2 1" unique_id=1737406517]
-position = Vector2(12, 93.25)
-shape = SubResource("RectangleShape2D_inqu3")
 
 [node name="npc L2 2" type="CharacterBody2D" parent="." unique_id=989799734]
 position = Vector2(404, 183)
