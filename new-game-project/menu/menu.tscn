@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://cvkvtb25je5tc"]
 
-[ext_resource type="Script" uid="uid://lavy3grbre3s" path="res://settingbutton.gd" id="1_lti8b"]
+[ext_resource type="Script" uid="uid://lavy3grbre3s" path="res://menu/settingbutton.gd" id="1_lti8b"]
 [ext_resource type="FontFile" uid="uid://kakemuqg7gk7" path="res://I-pixel-u.ttf" id="1_mae5d"]
-[ext_resource type="Script" uid="uid://j3dj88fhab1p" path="res://playbutton.gd" id="1_ouk20"]
-[ext_resource type="Script" uid="uid://c7kalgmmcnpef" path="res://levels.gd" id="2_mae5d"]
+[ext_resource type="Script" uid="uid://j3dj88fhab1p" path="res://menu/playbutton.gd" id="1_ouk20"]
+[ext_resource type="Script" uid="uid://c7kalgmmcnpef" path="res://LEVELS/levels.gd" id="2_mae5d"]
 
 [node name="menu" type="Control" unique_id=135649398]
 layout_mode = 3

@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cay2rojxbr5my"]
 
-[ext_resource type="Script" uid="uid://cfeboa1ggx0ee" path="res://Player1Controller.gd" id="1_bxx23"]
+[ext_resource type="Script" uid="uid://cfeboa1ggx0ee" path="res://LEVELS/Player1Controller.gd" id="1_bxx23"]
 [ext_resource type="Texture2D" uid="uid://djwmutinmm5of" path="res://characters/brighteyes IDLE-1.png.png" id="2_72vom"]
 [ext_resource type="Texture2D" uid="uid://by7sq6pwkyuhf" path="res://characters/brighteyes IDLE-2.png.png" id="3_ugj0w"]
 [ext_resource type="Texture2D" uid="uid://c07x2sv23djly" path="res://characters/brighteyes IDLE-3.png.png" id="4_n0cnt"]

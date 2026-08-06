@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cqow47bch5ocs"]
 
-[ext_resource type="Script" uid="uid://crtdv5djku0ij" path="res://main.gd" id="1_0xm2m"]
-[ext_resource type="PackedScene" uid="uid://cay2rojxbr5my" path="res://player_1.tscn" id="1_ig7tw"]
+[ext_resource type="Script" uid="uid://crtdv5djku0ij" path="res://LEVELS/main.gd" id="1_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://cay2rojxbr5my" path="res://LEVELS/player_1.tscn" id="1_ig7tw"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_0xm2m"]
 distance = -356.0

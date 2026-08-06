@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://xqyatxkppx"]
+
+[node name="npcs_level_4" type="Node2D" unique_id=560533176]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=547943411]
+
+[node name="CharacterBody2D2" type="CharacterBody2D" parent="." unique_id=192110026]
+
+[node name="CharacterBody2D3" type="CharacterBody2D" parent="." unique_id=273793198]
+
+[node name="CharacterBody2D4" type="CharacterBody2D" parent="." unique_id=2014161881]
+
+[node name="CharacterBody2D5" type="CharacterBody2D" parent="." unique_id=22087035]

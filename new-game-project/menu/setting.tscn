@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://byqba1rrm1kkv"]
 
-[ext_resource type="FontFile" uid="uid://kakemuqg7gk7" path="res://I-pixel-u.ttf" id="1_110nh"]
-[ext_resource type="Script" uid="uid://btd6bsk6b036l" path="res://button_1.gd" id="1_a42w7"]
+[ext_resource type="FontFile" uid="uid://kakemuqg7gk7" path="res://I-pixel-u.ttf" id="1_mlebs"]
+[ext_resource type="Script" uid="uid://btd6bsk6b036l" path="res://menu/button_1.gd" id="2_xxgf1"]
 
 [node name="InputSettings" type="Control" unique_id=701639373]
 layout_mode = 3
@@ -33,7 +33,7 @@ offset_right = 84.5
 offset_bottom = -216.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_fonts/font = ExtResource("1_110nh")
+theme_override_fonts/font = ExtResource("1_mlebs")
 theme_override_font_sizes/font_size = 50
 text = "SETTING"
 
@@ -51,10 +51,10 @@ offset_bottom = 279.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_outline_color = Color(0.3180198, 0.31801978, 0.31801975, 1)
-theme_override_fonts/font = ExtResource("1_110nh")
+theme_override_fonts/font = ExtResource("1_mlebs")
 theme_override_font_sizes/font_size = 32
 text = "BACK"
-script = ExtResource("1_a42w7")
+script = ExtResource("2_xxgf1")
 
 [node name="Label2" type="Label" parent="." unique_id=959160580]
 layout_mode = 0
@@ -62,7 +62,7 @@ offset_left = 192.0
 offset_top = 135.0
 offset_right = 380.0
 offset_bottom = 582.0
-theme_override_fonts/font = ExtResource("1_110nh")
+theme_override_fonts/font = ExtResource("1_mlebs")
 theme_override_font_sizes/font_size = 33
 text = "JUMP: W
 
@@ -81,7 +81,7 @@ offset_left = 675.0
 offset_top = 135.0
 offset_right = 863.0
 offset_bottom = 582.0
-theme_override_fonts/font = ExtResource("1_110nh")
+theme_override_fonts/font = ExtResource("1_mlebs")
 theme_override_font_sizes/font_size = 33
 text = "JUMP: ⬆️
 

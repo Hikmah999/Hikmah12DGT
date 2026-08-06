@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://be6oqr8byece8" path="res://characters/Taph IDLE-1.png.png" id="2_lkps3"]
 [ext_resource type="Texture2D" uid="uid://dqfh8nqvcqhv6" path="res://characters/Taph IDLE-2.png.png" id="3_q0qdg"]
 [ext_resource type="Texture2D" uid="uid://bbrebkb3nw762" path="res://characters/Taph IDLE-3.png.png" id="4_dfkcb"]
-[ext_resource type="Script" uid="uid://b6v0rjcksllau" path="res://npc_l_1_2.gd" id="5_iqnpa"]
+[ext_resource type="Script" uid="uid://b6v0rjcksllau" path="res://Npcs/npc_l_1_2.gd" id="5_iqnpa"]
 [ext_resource type="Texture2D" uid="uid://dl4km0yjrn3yx" path="res://characters/Taph IDLE-4.png.png" id="5_pxaxd"]
 [ext_resource type="Texture2D" uid="uid://2ykdwyoou4wy" path="res://characters/two time IDLE-1.png.png" id="6_gmq6j"]
 [ext_resource type="Texture2D" uid="uid://chyv2k4lyi7f7" path="res://character level 3/Happy Two time-1.png.png" id="6_sn0xf"]

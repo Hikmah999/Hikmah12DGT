@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://4esvy86q8h8w"]
 
 [ext_resource type="FontFile" uid="uid://kakemuqg7gk7" path="res://I-pixel-u.ttf" id="1_fw52b"]
-[ext_resource type="Script" uid="uid://bnu1enx47kf7c" path="res://character_select.gd" id="3_v3dpv"]
+[ext_resource type="Script" uid="uid://bnu1enx47kf7c" path="res://menu/character_select.gd" id="3_v3dpv"]
 [ext_resource type="Texture2D" uid="uid://djwmutinmm5of" path="res://characters/brighteyes IDLE-1.png.png" id="4_ghmnu"]
 [ext_resource type="Texture2D" uid="uid://b7xbmg1a5sqin" path="res://scenes/shed-chicken IDLE-1.png.png" id="4_ryabp"]
 [ext_resource type="Script" uid="uid://c1cm6poc7tnw2" path="res://scenes/brighteyes_idle.gd" id="5_ryabp"]

@@ -1,25 +1,25 @@
 [gd_scene format=3 uid="uid://hujc0gnhqeja"]
 
-[ext_resource type="Script" uid="uid://dlsermthjssgk" path="res://npc_l_3_1.gd" id="1_h67ps"]
-[ext_resource type="Texture2D" uid="uid://dqdjve60hrtx7" path="res://character level 3/Blox-Bot IDLE-1.png.png" id="2_w1j5r"]
-[ext_resource type="Texture2D" uid="uid://d3omjwc0r6j5j" path="res://character level 3/Blox-Bot IDLE-2.png.png" id="3_7uuu2"]
-[ext_resource type="Texture2D" uid="uid://dpcjv1hktdfas" path="res://character level 3/Blox-Bot IDLE-3.png.png" id="4_660i3"]
-[ext_resource type="Texture2D" uid="uid://p7i0a2lkbcx0" path="res://character level 3/Blox-Bot IDLE-4.png.png" id="5_lhwoa"]
-[ext_resource type="Script" uid="uid://bxg2x80j2b0a" path="res://npc_l_3_2.gd" id="6_fdxdt"]
-[ext_resource type="Texture2D" uid="uid://dsqu0i56h5fhl" path="res://character level 3/Chance IDLE-1.png.png" id="7_f7rwd"]
-[ext_resource type="Texture2D" uid="uid://cp5s5krqjiev1" path="res://character level 3/Chance IDLE-2.png.png" id="8_fivd5"]
-[ext_resource type="Texture2D" uid="uid://d1cyj5w8h514" path="res://character level 3/Chance IDLE-3.png.png" id="9_uibmr"]
-[ext_resource type="Texture2D" uid="uid://cy5k7ewnfdgyg" path="res://character level 3/Chance IDLE-4.png.png" id="10_wx7ig"]
-[ext_resource type="Script" uid="uid://bss4mgihbqfdc" path="res://character_body_2d.gd" id="11_udvj1"]
-[ext_resource type="Texture2D" uid="uid://1lqwg543725j" path="res://character level 3/guest IDLE-1.png.png" id="12_odmt2"]
-[ext_resource type="Texture2D" uid="uid://y0viv1sd4kxu" path="res://character level 3/guest IDLE-2.png.png" id="13_vmcb5"]
-[ext_resource type="Texture2D" uid="uid://flf4e6frvsvh" path="res://character level 3/guest IDLE-3.png.png" id="14_5s8pv"]
-[ext_resource type="Texture2D" uid="uid://dbdfxfdilp2xr" path="res://character level 3/guest IDLE-4.png.png" id="15_x3p0d"]
-[ext_resource type="Script" uid="uid://bsc35stbbvp82" path="res://npc_l_3_4.gd" id="16_f86nq"]
-[ext_resource type="Texture2D" uid="uid://dtn5usrfwcxcm" path="res://character level 3/PumpkinDuse IDLE-1.png.png" id="17_2bu6h"]
-[ext_resource type="Texture2D" uid="uid://dwm6wf6eew13h" path="res://character level 3/PumpkinDuse IDLE-2.png.png" id="18_duicr"]
-[ext_resource type="Texture2D" uid="uid://c6saefv82h310" path="res://character level 3/PumpkinDuse IDLE-3.png.png" id="19_uhctd"]
-[ext_resource type="Texture2D" uid="uid://jjl12ejehvab" path="res://character level 3/PumpkinDuse IDLE-4.png.png" id="20_cpgb3"]
+[ext_resource type="Script" uid="uid://dlsermthjssgk" path="res://Npcs/npc_l_3_1.gd" id="1_dyi28"]
+[ext_resource type="Texture2D" uid="uid://dqdjve60hrtx7" path="res://character level 3/Blox-Bot IDLE-1.png.png" id="2_dlfnu"]
+[ext_resource type="Texture2D" uid="uid://d3omjwc0r6j5j" path="res://character level 3/Blox-Bot IDLE-2.png.png" id="3_xqvfo"]
+[ext_resource type="Texture2D" uid="uid://dpcjv1hktdfas" path="res://character level 3/Blox-Bot IDLE-3.png.png" id="4_3v7ch"]
+[ext_resource type="Texture2D" uid="uid://p7i0a2lkbcx0" path="res://character level 3/Blox-Bot IDLE-4.png.png" id="5_hkbw4"]
+[ext_resource type="Script" uid="uid://bxg2x80j2b0a" path="res://Npcs/npc_l_3_2.gd" id="6_lo0lo"]
+[ext_resource type="Texture2D" uid="uid://dsqu0i56h5fhl" path="res://character level 3/Chance IDLE-1.png.png" id="7_x74ad"]
+[ext_resource type="Texture2D" uid="uid://cp5s5krqjiev1" path="res://character level 3/Chance IDLE-2.png.png" id="8_p5cwj"]
+[ext_resource type="Texture2D" uid="uid://d1cyj5w8h514" path="res://character level 3/Chance IDLE-3.png.png" id="9_7mm61"]
+[ext_resource type="Texture2D" uid="uid://cy5k7ewnfdgyg" path="res://character level 3/Chance IDLE-4.png.png" id="10_urpif"]
+[ext_resource type="Script" uid="uid://bss4mgihbqfdc" path="res://menu/character_body_2d.gd" id="11_qh5oh"]
+[ext_resource type="Texture2D" uid="uid://1lqwg543725j" path="res://character level 3/guest IDLE-1.png.png" id="12_5i8yj"]
+[ext_resource type="Texture2D" uid="uid://y0viv1sd4kxu" path="res://character level 3/guest IDLE-2.png.png" id="13_sww1q"]
+[ext_resource type="Texture2D" uid="uid://flf4e6frvsvh" path="res://character level 3/guest IDLE-3.png.png" id="14_d3mws"]
+[ext_resource type="Texture2D" uid="uid://dbdfxfdilp2xr" path="res://character level 3/guest IDLE-4.png.png" id="15_af10a"]
+[ext_resource type="Script" uid="uid://bsc35stbbvp82" path="res://Npcs/npc_l_3_4.gd" id="16_w3p6x"]
+[ext_resource type="Texture2D" uid="uid://dtn5usrfwcxcm" path="res://character level 3/PumpkinDuse IDLE-1.png.png" id="17_20d4d"]
+[ext_resource type="Texture2D" uid="uid://dwm6wf6eew13h" path="res://character level 3/PumpkinDuse IDLE-2.png.png" id="18_jghys"]
+[ext_resource type="Texture2D" uid="uid://c6saefv82h310" path="res://character level 3/PumpkinDuse IDLE-3.png.png" id="19_r2qgb"]
+[ext_resource type="Texture2D" uid="uid://jjl12ejehvab" path="res://character level 3/PumpkinDuse IDLE-4.png.png" id="20_ce5rq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_f7rwd"]
 size = Vector2(76, 134)
@@ -28,16 +28,16 @@ size = Vector2(76, 134)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_w1j5r")
+"texture": ExtResource("2_dlfnu")
 }, {
 "duration": 1.0,
-"texture": ExtResource("3_7uuu2")
+"texture": ExtResource("3_xqvfo")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_660i3")
+"texture": ExtResource("4_3v7ch")
 }, {
 "duration": 1.0,
-"texture": ExtResource("5_lhwoa")
+"texture": ExtResource("5_hkbw4")
 }],
 "loop": true,
 "name": &"standing npcs",
@@ -51,16 +51,16 @@ size = Vector2(74, 136)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("7_f7rwd")
+"texture": ExtResource("7_x74ad")
 }, {
 "duration": 1.0,
-"texture": ExtResource("8_fivd5")
+"texture": ExtResource("8_p5cwj")
 }, {
 "duration": 1.0,
-"texture": ExtResource("9_uibmr")
+"texture": ExtResource("9_7mm61")
 }, {
 "duration": 1.0,
-"texture": ExtResource("10_wx7ig")
+"texture": ExtResource("10_urpif")
 }],
 "loop": true,
 "name": &"standing npcs",
@@ -74,16 +74,16 @@ size = Vector2(73, 136)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("12_odmt2")
+"texture": ExtResource("12_5i8yj")
 }, {
 "duration": 1.0,
-"texture": ExtResource("13_vmcb5")
+"texture": ExtResource("13_sww1q")
 }, {
 "duration": 1.0,
-"texture": ExtResource("14_5s8pv")
+"texture": ExtResource("14_d3mws")
 }, {
 "duration": 1.0,
-"texture": ExtResource("15_x3p0d")
+"texture": ExtResource("15_af10a")
 }],
 "loop": true,
 "name": &"standing npcs",
@@ -97,16 +97,16 @@ size = Vector2(69, 139.5)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("17_2bu6h")
+"texture": ExtResource("17_20d4d")
 }, {
 "duration": 1.0,
-"texture": ExtResource("18_duicr")
+"texture": ExtResource("18_jghys")
 }, {
 "duration": 1.0,
-"texture": ExtResource("19_uhctd")
+"texture": ExtResource("19_r2qgb")
 }, {
 "duration": 1.0,
-"texture": ExtResource("20_cpgb3")
+"texture": ExtResource("20_ce5rq")
 }],
 "loop": true,
 "name": &"standing npcs ",
@@ -116,7 +116,7 @@ animations = [{
 [node name="npcslevel3" type="Node2D" unique_id=2134047930]
 
 [node name="npc l3 1" type="CharacterBody2D" parent="." unique_id=208944403]
-script = ExtResource("1_h67ps")
+script = ExtResource("1_dyi28")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="npc l3 1" unique_id=1010079338]
 position = Vector2(200, 314)
@@ -129,7 +129,7 @@ animation = &"standing npcs"
 autoplay = "standing npcs"
 
 [node name="npc L3 2" type="CharacterBody2D" parent="." unique_id=402867423]
-script = ExtResource("6_fdxdt")
+script = ExtResource("6_lo0lo")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="npc L3 2" unique_id=696831148]
 position = Vector2(316, 312)
@@ -142,7 +142,7 @@ animation = &"standing npcs"
 autoplay = "standing npcs"
 
 [node name="npc L3 3" type="CharacterBody2D" parent="." unique_id=1023396889]
-script = ExtResource("11_udvj1")
+script = ExtResource("11_qh5oh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="npc L3 3" unique_id=185380608]
 position = Vector2(420.5, 312)
@@ -155,7 +155,7 @@ animation = &"standing npcs"
 autoplay = "standing npcs"
 
 [node name="npc L3 4" type="CharacterBody2D" parent="." unique_id=518848581]
-script = ExtResource("16_f86nq")
+script = ExtResource("16_w3p6x")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="npc L3 4" unique_id=708997526]
 position = Vector2(520.5, 312.25)
