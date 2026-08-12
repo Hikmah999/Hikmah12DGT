@@ -4,10 +4,6 @@ const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
 
 @onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
-@onready var hand = $hand
-@onready var object_marker: Marker2D = $ObjectMarker
-
-var held_card = null
 
 func _physics_process(delta: float) -> void:
 	# Apply gravity
@@ -34,32 +30,5 @@ func _physics_process(delta: float) -> void:
 		animated_sprite.play("walk")
 	else:
 		animated_sprite.play("standing")
-		
+
 	move_and_slide()
-var possiblePickupObjects = []
-var currentObject
-func _input(event:InputEvent) -> void:
-	if Input.is_action_just_pressed("interaction") and currentObject:
-		throw_object()
-	elif Input.is_action_just_pressed("interaction") and possiblePickupObject:
-		pickup_object()
-
-func throw_object():
-	
-func pickup_object():
-	currentObject.reparent(get_tree().current_scene)
-
-	var throwDirection = global_position.direction_to(object_marker.global_position)
-	currentObject.throw(throwDirection)
-	
-	currentObject = null
-	
-		
-func _on_pickup_area_body_entered(body: Node2D) -> void:
-	if body is GameObject:
-		possiblePickupObjects.append(body)
-
-func _on_pickup_area_body_exited(body: Node2D) -> void:
-	if body is GameObject:
-		possiblePickupObjects.erase(body)
-	

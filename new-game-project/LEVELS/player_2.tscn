@@ -11,11 +11,9 @@
 [ext_resource type="Texture2D" uid="uid://dba4ifulje3iu" path="res://characters/shed-chicken WALK-4.png.png" id="9_y7egp"]
 [ext_resource type="Texture2D" uid="uid://31lfodqk3hbu" path="res://characters/shed-chicken WALK-5.png.png" id="10_ayiqd"]
 [ext_resource type="Texture2D" uid="uid://b7veqmvo5chjy" path="res://characters/shed-chicken WALK-6.png.png" id="11_vl7il"]
-[ext_resource type="Script" uid="uid://hum0upo86o2v" path="res://LEVELS/cards.gd" id="12_53csg"]
-[ext_resource type="Texture2D" uid="uid://to7av8cslgqw" path="res://cards/llama-1.png (1).png" id="12_f0wic"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6imt3"]
-size = Vector2(62, 114)
+size = Vector2(40, 82)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_y762y"]
 animations = [{
@@ -60,16 +58,11 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_6c4gx"]
-size = Vector2(19, 20.5)
-
-[sub_resource type="CircleShape2D" id="CircleShape2D_j346d"]
-
 [node name="player_2" type="CharacterBody2D" unique_id=319582610]
 script = ExtResource("1_up5o4")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=127662423]
-position = Vector2(21, 47)
+position = Vector2(25, 41)
 shape = SubResource("RectangleShape2D_6imt3")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=183333920]
@@ -77,29 +70,3 @@ position = Vector2(25, 41)
 sprite_frames = SubResource("SpriteFrames_y762y")
 animation = &"standing"
 autoplay = "standing"
-
-[node name="ObjectMarker" type="Marker2D" parent="." unique_id=557515502]
-position = Vector2(59, 49)
-
-[node name="cards" type="CharacterBody2D" parent="." unique_id=1825638468]
-position = Vector2(118, 92)
-script = ExtResource("12_53csg")
-
-[node name="card 1" type="Sprite2D" parent="cards" unique_id=1830359091]
-position = Vector2(-11.500002, 11.499998)
-scale = Vector2(0.4374999, 0.47916678)
-texture = ExtResource("12_f0wic")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="cards" unique_id=17536267]
-position = Vector2(-12, 12)
-shape = SubResource("RectangleShape2D_6c4gx")
-
-[node name="PickupArea" type="Area2D" parent="." unique_id=1831498585]
-position = Vector2(162, 103)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="PickupArea" unique_id=1722410705]
-position = Vector2(-1, -2)
-shape = SubResource("CircleShape2D_j346d")
-
-[connection signal="body_entered" from="PickupArea" to="." method="_on_pickup_area_body_entered"]
-[connection signal="body_exited" from="PickupArea" to="." method="_on_pickup_area_body_exited"]

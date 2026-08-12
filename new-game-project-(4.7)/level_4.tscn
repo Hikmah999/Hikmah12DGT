@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://bp5xqx0p6pvql"]
+
+[ext_resource type="Script" uid="uid://1v5u4coiokng" path="res://level_4_map.gd" id="1_5pu08"]
+
+[node name="level 4" type="Control" unique_id=707994456]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=651273148]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.18000486, 0.18000486, 0.18000486, 1)
+
+[node name="level 4 map" type="Button" parent="." unique_id=1876695450]
+layout_mode = 0
+offset_left = 1075.0
+offset_top = 12.0
+offset_right = 1138.0
+offset_bottom = 84.0
+text = "map"
+script = ExtResource("1_5pu08")
+
+[connection signal="pressed" from="level 4 map" to="level 4 map" method="_on_pressed"]

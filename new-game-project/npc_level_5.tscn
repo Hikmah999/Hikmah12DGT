@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://dgnrtw6ncau0n"]
+
+[node name="npclevel5" type="Node2D" unique_id=1578429773]
+
+[node name="1" type="CharacterBody2D" parent="." unique_id=159596873]
+
+[node name="2" type="CharacterBody2D" parent="." unique_id=2100546804]
+
+[node name="3" type="CharacterBody2D" parent="." unique_id=1143756284]
+
+[node name="4" type="CharacterBody2D" parent="." unique_id=2057611718]
+
+[node name="5" type="CharacterBody2D" parent="." unique_id=1139415677]
+
+[node name="6" type="CharacterBody2D" parent="." unique_id=1800805378]
+
+[node name="7" type="CharacterBody2D" parent="." unique_id=1727449146]
+
+[node name="8" type="CharacterBody2D" parent="." unique_id=2066089574]
+
+[node name="9" type="CharacterBody2D" parent="." unique_id=1433029611]
+
+[node name="10" type="CharacterBody2D" parent="." unique_id=656575678]

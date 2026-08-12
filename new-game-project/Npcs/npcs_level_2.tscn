@@ -17,7 +17,7 @@
 [ext_resource type="Texture2D" uid="uid://bul0b0wbiq8fh" path="res://characters/007e7 idle-4.png.png" id="15_nx37r"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_inqu3"]
-size = Vector2(61, 114.5)
+size = Vector2(18, 3)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_67lvm"]
 animations = [{
@@ -40,7 +40,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5hedi"]
-size = Vector2(61.5, 123.875)
+size = Vector2(18, 3)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_i2o0l"]
 animations = [{
@@ -63,7 +63,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6qsdt"]
-size = Vector2(62, 122)
+size = Vector2(8, 2)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_t6kcd"]
 animations = [{
@@ -88,43 +88,43 @@ animations = [{
 [node name="npcs level2" type="Node2D" unique_id=959610073]
 
 [node name="npc L2 1" type="CharacterBody2D" parent="." unique_id=497470991]
-position = Vector2(253, 166)
+position = Vector2(154, 198)
 script = ExtResource("1_30c74")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="npc L2 1" unique_id=1737406517]
-position = Vector2(12, 93.25)
+position = Vector2(6, 296.5)
 shape = SubResource("RectangleShape2D_inqu3")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="npc L2 1" unique_id=1632803335]
-position = Vector2(11, 102)
+position = Vector2(6, 256)
 sprite_frames = SubResource("SpriteFrames_67lvm")
 animation = &"standing npcs"
 autoplay = "standing npcs"
 
 [node name="npc L2 2" type="CharacterBody2D" parent="." unique_id=989799734]
-position = Vector2(404, 183)
+position = Vector2(317, 201)
 script = ExtResource("6_kccid")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="npc L2 2" unique_id=1556951608]
-position = Vector2(9, 73.9375)
+position = Vector2(-146, -39.5)
 shape = SubResource("RectangleShape2D_5hedi")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="npc L2 2" unique_id=13938163]
-position = Vector2(9, 80)
+position = Vector2(-146, -81)
 sprite_frames = SubResource("SpriteFrames_i2o0l")
 animation = &"standing npcs"
 autoplay = "standing npcs"
 
 [node name="npc L2 3" type="CharacterBody2D" parent="." unique_id=130319486]
-position = Vector2(551, 197)
+position = Vector2(551, 209)
 script = ExtResource("11_o6bf4")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="npc L2 3" unique_id=700670897]
-position = Vector2(11, 63)
+position = Vector2(470, -22)
 shape = SubResource("RectangleShape2D_6qsdt")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="npc L2 3" unique_id=727389424]
-position = Vector2(11, 71)
+position = Vector2(470, -65)
 sprite_frames = SubResource("SpriteFrames_t6kcd")
 animation = &"standing npcs"
 autoplay = "standing npcs"

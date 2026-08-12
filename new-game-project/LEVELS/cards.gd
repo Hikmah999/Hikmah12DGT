@@ -10,19 +10,9 @@ func _physics_process(delta: float) -> void:
 		velocity += get_gravity() * delta
 
 	if is_on_floor():
-		velocity = Vector2.ZERO
-
+		velocity.x = move_toward(velocity.x, 0, 600 * delta)
+		velocity.y = 0
+		
 	move_and_slide()
 
-func picked_up():
-	collision_shape_2d.disabled = true
-
-	set_physics_process(false)
-
-func throw(direction):
-	set_physics_process(true)
-	velocity = throwForce
-	velocity.x *= direction.x
-
-	await get_tree().create_timer(0.1).timeout
-	collision_shape_2d.disabled = false
+@onready var sprite2d: Sprite2D = $Sprite2D
