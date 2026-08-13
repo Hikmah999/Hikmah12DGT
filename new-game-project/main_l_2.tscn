@@ -1,8 +1,7 @@
 [gd_scene format=3 uid="uid://ds566obp34351"]
 
-[ext_resource type="Texture2D" uid="uid://yp21mmarl8qk" path="res://level images/Screenshot 2026-08-12 101912.png" id="1_brukj"]
+[ext_resource type="Texture2D" uid="uid://b5qer8uvhuiuh" path="res://level images/Screenshot 2026-08-14 093235.png" id="1_dprnk"]
 [ext_resource type="PackedScene" uid="uid://fagonxjqtnyr" path="res://player_1.tscn" id="2_8hh40"]
-[ext_resource type="Texture2D" uid="uid://dwn2iq2shwmvh" path="res://level images/Screenshot 2026-08-13 100852.png" id="2_kqw05"]
 [ext_resource type="Script" uid="uid://df65dv62by483" path="res://Npcs/npc_l_2_2.gd" id="3_dprnk"]
 [ext_resource type="Texture2D" uid="uid://d132ruul5qdiu" path="res://characters/noob IDLE-1.png.png" id="4_kqw05"]
 [ext_resource type="Texture2D" uid="uid://x3ht5ja8o4gr" path="res://characters/noob IDLE-2.png.png" id="5_df4ce"]
@@ -38,7 +37,7 @@ size = Vector2(273.5, 169)
 size = Vector2(102, 116)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_df4ce"]
-size = Vector2(66.5, 61)
+size = Vector2(49, 61)
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_w7wf4"]
 normal = Vector2(1, 0)
@@ -125,15 +124,10 @@ size = Vector2(23, 0)
 
 [node name="main L2" type="Node2D" unique_id=1823888605]
 
-[node name="Screenshot20260812101912" type="Sprite2D" parent="." unique_id=1889986904]
-position = Vector2(577.354, 322.74994)
-scale = Vector2(1.0439999, 1.0439999)
-texture = ExtResource("1_brukj")
-
-[node name="Screenshot20260813100852" type="Sprite2D" parent="Screenshot20260812101912" unique_id=1233735104]
-position = Vector2(265.7954, -54.07734)
-scale = Vector2(1.4574347, 0.99641603)
-texture = ExtResource("2_kqw05")
+[node name="Screenshot20260814093235" type="Sprite2D" parent="." unique_id=1160258827]
+position = Vector2(578.9822, 324)
+scale = Vector2(0.9585798, 0.9585799)
+texture = ExtResource("1_dprnk")
 
 [node name="the blocks" type="StaticBody2D" parent="." unique_id=691150157]
 
@@ -162,7 +156,7 @@ position = Vector2(321, 588)
 shape = SubResource("RectangleShape2D_gjy6k")
 
 [node name="CollisionShape2D7" type="CollisionShape2D" parent="the blocks" unique_id=1854516]
-position = Vector2(855.75, 266)
+position = Vector2(864.5, 266)
 shape = SubResource("RectangleShape2D_df4ce")
 
 [node name="boundries" type="StaticBody2D" parent="." unique_id=733890240]

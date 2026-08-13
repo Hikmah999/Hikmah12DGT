@@ -52,7 +52,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6kacy"]
-size = Vector2(17, 4)
+size = Vector2(17, 2)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_4xp6q"]
 animations = [{
@@ -104,7 +104,7 @@ autoplay = "standing npcs"
 script = ExtResource("5_iqnpa")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="npcL1 2" unique_id=692719501]
-position = Vector2(790.5, 466)
+position = Vector2(790.5, 465)
 shape = SubResource("RectangleShape2D_6kacy")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="npcL1 2" unique_id=1404312326]
