@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://cne0spswvfhtk"]
+
+[ext_resource type="Script" uid="uid://bxgmvgdu1iua7" path="res://Throw.gd" id="1_og28m"]
+[ext_resource type="Texture2D" uid="uid://ckp8vixa6hog6" path="res://cards/llama-2.png.png" id="2_0y1od"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a7t48"]
+size = Vector2(18, 23)
+
+[node name="Area2D" type="Area2D" unique_id=1210923590]
+script = ExtResource("1_og28m")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=498005790]
+position = Vector2(-1.5000153, 1.4117737)
+scale = Vector2(0.39583337, 0.5588236)
+texture = ExtResource("2_0y1od")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1301046073]
+position = Vector2(-1, 1.3235474)
+shape = SubResource("RectangleShape2D_a7t48")

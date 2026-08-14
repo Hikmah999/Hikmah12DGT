@@ -11,6 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://dba4ifulje3iu" path="res://characters/shed-chicken WALK-4.png.png" id="9_y7egp"]
 [ext_resource type="Texture2D" uid="uid://31lfodqk3hbu" path="res://characters/shed-chicken WALK-5.png.png" id="10_ayiqd"]
 [ext_resource type="Texture2D" uid="uid://b7veqmvo5chjy" path="res://characters/shed-chicken WALK-6.png.png" id="11_vl7il"]
+[ext_resource type="PackedScene" uid="uid://cne0spswvfhtk" path="res://Throw.tscn" id="12_f0wic"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6imt3"]
 size = Vector2(40, 82)
@@ -30,7 +31,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("5_7d0q2")
 }],
-"loop": true,
+"loop": 1,
 "name": &"standing",
 "speed": 5.0
 }, {
@@ -53,7 +54,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("11_vl7il")
 }],
-"loop": true,
+"loop": 1,
 "name": &"walk",
 "speed": 5.0
 }]
@@ -70,3 +71,6 @@ position = Vector2(25, 41)
 sprite_frames = SubResource("SpriteFrames_y762y")
 animation = &"standing"
 autoplay = "standing"
+
+[node name="Area2D" parent="." unique_id=1210923590 instance=ExtResource("12_f0wic")]
+position = Vector2(-91, -113)

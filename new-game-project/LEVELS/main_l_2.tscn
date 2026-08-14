@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://ds566obp34351"]
 
 [ext_resource type="Texture2D" uid="uid://b5qer8uvhuiuh" path="res://level images/Screenshot 2026-08-14 093235.png" id="1_dprnk"]
-[ext_resource type="PackedScene" uid="uid://fagonxjqtnyr" path="res://player_1.tscn" id="2_8hh40"]
+[ext_resource type="PackedScene" uid="uid://fagonxjqtnyr" path="res://LEVELS/player_1.tscn" id="2_8hh40"]
 [ext_resource type="Script" uid="uid://df65dv62by483" path="res://Npcs/npc_l_2_2.gd" id="3_dprnk"]
 [ext_resource type="Texture2D" uid="uid://d132ruul5qdiu" path="res://characters/noob IDLE-1.png.png" id="4_kqw05"]
 [ext_resource type="Texture2D" uid="uid://x3ht5ja8o4gr" path="res://characters/noob IDLE-2.png.png" id="5_df4ce"]

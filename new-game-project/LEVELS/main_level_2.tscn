@@ -1,22 +1,22 @@
 [gd_scene format=3 uid="uid://3ykplbphk4sh"]
 
-[ext_resource type="Texture2D" uid="uid://b5qer8uvhuiuh" path="res://level images/Screenshot 2026-08-14 093235.png" id="1_cb6ad"]
-[ext_resource type="Script" uid="uid://df65dv62by483" path="res://Npcs/npc_l_2_2.gd" id="3_cb6ad"]
-[ext_resource type="PackedScene" uid="uid://bo4ecolaorstk" path="res://LEVELS/player_2.tscn" id="3_t4npv"]
-[ext_resource type="Texture2D" uid="uid://d132ruul5qdiu" path="res://characters/noob IDLE-1.png.png" id="4_rc3j3"]
-[ext_resource type="Texture2D" uid="uid://x3ht5ja8o4gr" path="res://characters/noob IDLE-2.png.png" id="5_4jtrq"]
-[ext_resource type="Texture2D" uid="uid://b4lbu6jn8quyo" path="res://characters/noob IDLE-3.png.png" id="6_14awq"]
-[ext_resource type="Texture2D" uid="uid://did5e7iddy0u4" path="res://characters/noob IDLE-4.png.png" id="7_v7nb4"]
-[ext_resource type="Script" uid="uid://ha5n3wpxii74" path="res://Npcs/npc_l_2_3.gd" id="8_u8vcq"]
-[ext_resource type="Texture2D" uid="uid://qx4q34qgt5ty" path="res://characters/007e7 idle-1.png.png" id="9_t7va0"]
-[ext_resource type="Texture2D" uid="uid://c4srytfuuadwv" path="res://characters/007e7 idle-2.png.png" id="10_gds7p"]
-[ext_resource type="Texture2D" uid="uid://cwfuhv8corac4" path="res://characters/007e7 idle-3.png.png" id="11_ug0ll"]
-[ext_resource type="Texture2D" uid="uid://bul0b0wbiq8fh" path="res://characters/007e7 idle-4.png.png" id="12_1i4s6"]
-[ext_resource type="Script" uid="uid://bqe7y6bfr35nq" path="res://Npcs/npc_l_2_1.gd" id="13_4dcal"]
-[ext_resource type="Texture2D" uid="uid://c7t7h0ulfjk0q" path="res://characters/Elliot IDLE-1.png.png" id="14_k2nic"]
-[ext_resource type="Texture2D" uid="uid://bmmo31pkqy6am" path="res://characters/Elliot IDLE-2.png.png" id="15_6fplh"]
-[ext_resource type="Texture2D" uid="uid://da5udhdjnm0ka" path="res://characters/Elliot IDLE-3.png.png" id="16_qcflh"]
-[ext_resource type="Texture2D" uid="uid://bhpwh2n41scs4" path="res://characters/Elliot IDLE-4.png.png" id="17_l835a"]
+[ext_resource type="Texture2D" uid="uid://b5qer8uvhuiuh" path="res://level images/Screenshot 2026-08-14 093235.png" id="1_00xnh"]
+[ext_resource type="PackedScene" uid="uid://bo4ecolaorstk" path="res://LEVELS/player_2.tscn" id="2_yjffm"]
+[ext_resource type="Script" uid="uid://df65dv62by483" path="res://Npcs/npc_l_2_2.gd" id="3_yx3qo"]
+[ext_resource type="Texture2D" uid="uid://d132ruul5qdiu" path="res://characters/noob IDLE-1.png.png" id="4_bmnxt"]
+[ext_resource type="Texture2D" uid="uid://x3ht5ja8o4gr" path="res://characters/noob IDLE-2.png.png" id="5_exs6h"]
+[ext_resource type="Texture2D" uid="uid://b4lbu6jn8quyo" path="res://characters/noob IDLE-3.png.png" id="6_mn4dp"]
+[ext_resource type="Texture2D" uid="uid://did5e7iddy0u4" path="res://characters/noob IDLE-4.png.png" id="7_p12xl"]
+[ext_resource type="Script" uid="uid://ha5n3wpxii74" path="res://Npcs/npc_l_2_3.gd" id="8_2prjh"]
+[ext_resource type="Texture2D" uid="uid://qx4q34qgt5ty" path="res://characters/007e7 idle-1.png.png" id="9_j4vd3"]
+[ext_resource type="Texture2D" uid="uid://c4srytfuuadwv" path="res://characters/007e7 idle-2.png.png" id="10_e7pgb"]
+[ext_resource type="Texture2D" uid="uid://cwfuhv8corac4" path="res://characters/007e7 idle-3.png.png" id="11_ighp6"]
+[ext_resource type="Texture2D" uid="uid://bul0b0wbiq8fh" path="res://characters/007e7 idle-4.png.png" id="12_f2lc7"]
+[ext_resource type="Script" uid="uid://bqe7y6bfr35nq" path="res://Npcs/npc_l_2_1.gd" id="13_0b4vq"]
+[ext_resource type="Texture2D" uid="uid://c7t7h0ulfjk0q" path="res://characters/Elliot IDLE-1.png.png" id="14_vt5uv"]
+[ext_resource type="Texture2D" uid="uid://bmmo31pkqy6am" path="res://characters/Elliot IDLE-2.png.png" id="15_hswqw"]
+[ext_resource type="Texture2D" uid="uid://da5udhdjnm0ka" path="res://characters/Elliot IDLE-3.png.png" id="16_0r12m"]
+[ext_resource type="Texture2D" uid="uid://bhpwh2n41scs4" path="res://characters/Elliot IDLE-4.png.png" id="17_l3tiq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rogwy"]
 size = Vector2(265, 66)
@@ -60,18 +60,18 @@ size = Vector2(24, 0)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("4_rc3j3")
+"texture": ExtResource("4_bmnxt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("5_4jtrq")
+"texture": ExtResource("5_exs6h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_14awq")
+"texture": ExtResource("6_mn4dp")
 }, {
 "duration": 1.0,
-"texture": ExtResource("7_v7nb4")
+"texture": ExtResource("7_p12xl")
 }],
-"loop": true,
+"loop": 1,
 "name": &"standing npcs",
 "speed": 5.0
 }]
@@ -83,18 +83,18 @@ size = Vector2(8, 2)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("9_t7va0")
+"texture": ExtResource("9_j4vd3")
 }, {
 "duration": 1.0,
-"texture": ExtResource("10_gds7p")
+"texture": ExtResource("10_e7pgb")
 }, {
 "duration": 1.0,
-"texture": ExtResource("11_ug0ll")
+"texture": ExtResource("11_ighp6")
 }, {
 "duration": 1.0,
-"texture": ExtResource("12_1i4s6")
+"texture": ExtResource("12_f2lc7")
 }],
-"loop": true,
+"loop": 1,
 "name": &"standing npcs",
 "speed": 5.0
 }]
@@ -103,18 +103,18 @@ animations = [{
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("14_k2nic")
+"texture": ExtResource("14_vt5uv")
 }, {
 "duration": 1.0,
-"texture": ExtResource("15_6fplh")
+"texture": ExtResource("15_hswqw")
 }, {
 "duration": 1.0,
-"texture": ExtResource("16_qcflh")
+"texture": ExtResource("16_0r12m")
 }, {
 "duration": 1.0,
-"texture": ExtResource("17_l835a")
+"texture": ExtResource("17_l3tiq")
 }],
-"loop": true,
+"loop": 1,
 "name": &"standing npcs",
 "speed": 5.0
 }]
@@ -127,7 +127,7 @@ size = Vector2(23, 0)
 [node name="Screenshot20260814093235" type="Sprite2D" parent="." unique_id=141059500]
 position = Vector2(579.3757, 324.00003)
 scale = Vector2(0.9592314, 0.95857996)
-texture = ExtResource("1_cb6ad")
+texture = ExtResource("1_00xnh")
 
 [node name="the blocks" type="StaticBody2D" parent="." unique_id=955995726]
 
@@ -176,12 +176,12 @@ shape = SubResource("WorldBoundaryShape2D_oxlbb")
 position = Vector2(133, 0)
 shape = SubResource("WorldBoundaryShape2D_s3k8i")
 
-[node name="player_2" parent="." unique_id=319582610 instance=ExtResource("3_t4npv")]
+[node name="player_2" parent="." unique_id=319582610 instance=ExtResource("2_yjffm")]
 position = Vector2(954, 489)
 
 [node name="npc L2 2" type="CharacterBody2D" parent="." unique_id=2055150365]
 position = Vector2(317, 201)
-script = ExtResource("3_cb6ad")
+script = ExtResource("3_yx3qo")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="npc L2 2" unique_id=1005124647]
 position = Vector2(-176, -46)
@@ -195,7 +195,7 @@ autoplay = "standing npcs"
 
 [node name="npc L2 3" type="CharacterBody2D" parent="." unique_id=958441188]
 position = Vector2(695, 315)
-script = ExtResource("8_u8vcq")
+script = ExtResource("8_2prjh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="npc L2 3" unique_id=2006487164]
 position = Vector2(470, -22)
@@ -209,7 +209,7 @@ autoplay = "standing npcs"
 
 [node name="npc L2 1" type="CharacterBody2D" parent="." unique_id=102562220]
 position = Vector2(154, 198)
-script = ExtResource("13_4dcal")
+script = ExtResource("13_0b4vq")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="npc L2 1" unique_id=1080184791]
 position = Vector2(-21, 259)

@@ -1,0 +1,91 @@
+[gd_scene format=3 uid="uid://dmlsdu10io0ty"]
+
+[ext_resource type="PackedScene" uid="uid://hujc0gnhqeja" path="res://Npcs/npcs_level_3.tscn" id="1_h63em"]
+[ext_resource type="PackedScene" uid="uid://bo4ecolaorstk" path="res://LEVELS/player_2.tscn" id="2_4fhmh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4fhmh"]
+size = Vector2(287.5, 62.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dgk03"]
+size = Vector2(274, 61.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7irft"]
+size = Vector2(74.5, 111.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_paov2"]
+size = Vector2(66, 58)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0i3b8"]
+size = Vector2(62.875, 56.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a7t48"]
+size = Vector2(71.5, 60)
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_cmnsi"]
+normal = Vector2(1, 0)
+distance = 21.0
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_i7qc0"]
+distance = -578.0
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_1ua0m"]
+normal = Vector2(-0.9999996, -0.0009074406)
+distance = -1144.4857
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_swkbq"]
+normal = Vector2(0, 1)
+
+[node name="main_level_3" type="Node2D" unique_id=2090028774]
+
+[node name="npcslevel3" parent="." unique_id=2134047930 instance=ExtResource("1_h63em")]
+position = Vector2(-1, 1)
+
+[node name="the blocks" type="StaticBody2D" parent="." unique_id=1732830177]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="the blocks" unique_id=1002520702]
+position = Vector2(143.25, 334.25)
+shape = SubResource("RectangleShape2D_4fhmh")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="the blocks" unique_id=2024408408]
+position = Vector2(1014, 228.25)
+shape = SubResource("RectangleShape2D_dgk03")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="the blocks" unique_id=1835562576]
+position = Vector2(684.25, 535.75)
+shape = SubResource("RectangleShape2D_7irft")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="the blocks" unique_id=484462604]
+position = Vector2(391, 357)
+shape = SubResource("RectangleShape2D_paov2")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="the blocks" unique_id=1068507377]
+position = Vector2(454.125, 414.75)
+shape = SubResource("RectangleShape2D_0i3b8")
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="the blocks" unique_id=116066044]
+position = Vector2(787.5625, 372)
+shape = SubResource("RectangleShape2D_0i3b8")
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="the blocks" unique_id=683670101]
+position = Vector2(608.75, 559)
+shape = SubResource("RectangleShape2D_a7t48")
+
+[node name="boundries" type="StaticBody2D" parent="." unique_id=1722850973]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="boundries" unique_id=1561542764]
+position = Vector2(-19, 106)
+shape = SubResource("WorldBoundaryShape2D_cmnsi")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="boundries" unique_id=1737402913]
+shape = SubResource("WorldBoundaryShape2D_i7qc0")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="boundries" unique_id=1482864142]
+position = Vector2(8, 77)
+shape = SubResource("WorldBoundaryShape2D_1ua0m")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="boundries" unique_id=781596020]
+position = Vector2(133, 0)
+shape = SubResource("WorldBoundaryShape2D_swkbq")
+
+[node name="player_2" parent="." unique_id=319582610 instance=ExtResource("2_4fhmh")]
+position = Vector2(298, 468)
