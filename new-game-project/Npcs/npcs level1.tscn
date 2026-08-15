@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://im7kojlqjli7"]
 
+[ext_resource type="Script" uid="uid://caxl77gmvy2ba" path="res://Npcs/npcL1_1.gd" id="1_tw55j"]
+[ext_resource type="Texture2D" uid="uid://eikqir5e5bxr" path="res://Npcs/Happy Taph-1.png.png" id="1_y4g7b"]
 [ext_resource type="Texture2D" uid="uid://be6oqr8byece8" path="res://characters/Taph IDLE-1.png.png" id="2_lkps3"]
 [ext_resource type="Texture2D" uid="uid://dqfh8nqvcqhv6" path="res://characters/Taph IDLE-2.png.png" id="3_q0qdg"]
 [ext_resource type="Texture2D" uid="uid://bbrebkb3nw762" path="res://characters/Taph IDLE-3.png.png" id="4_dfkcb"]
@@ -12,27 +14,19 @@
 [ext_resource type="Texture2D" uid="uid://dxnbhicsbivh1" path="res://characters/two time IDLE-4.png.png" id="9_41vp0"]
 [ext_resource type="Texture2D" uid="uid://hvkg6emc7hv4" path="res://characters/two time IDLE-5.png.png" id="10_v0qjv"]
 
-[sub_resource type="GDScript" id="GDScript_tsis6"]
-script/source = "extends CharacterBody2D
-
-@onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
-
-func _ready() -> void:
-	add_to_group(\"npc\")
-	# Ensure the physics body processes nothing that could cause movement
-	set_physics_process(false) 
-	set_process(false)
-
-func make_happy() -> void:
-
-	print(\"NPC is now happy and staying still!\")
-"
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gmq6j"]
-size = Vector2(32, 11)
+size = Vector2(19, 70)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_iqnpa"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_y4g7b")
+}],
+"loop": 1,
+"name": &"happy",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("2_lkps3")
@@ -46,13 +40,13 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("5_pxaxd")
 }],
-"loop": true,
+"loop": 1,
 "name": &"standing npcs",
 "speed": 5.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6kacy"]
-size = Vector2(17, 2)
+size = Vector2(17, 78)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_4xp6q"]
 animations = [{
@@ -60,8 +54,8 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("6_sn0xf")
 }],
-"loop": true,
-"name": &"happy npcs image ",
+"loop": 1,
+"name": &"happy",
 "speed": 5.0
 }, {
 "frames": [{
@@ -80,7 +74,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("10_v0qjv")
 }],
-"loop": true,
+"loop": 1,
 "name": &"sad npc aniamtion",
 "speed": 5.0
 }]
@@ -88,27 +82,29 @@ animations = [{
 [node name="npc" type="Node2D" unique_id=1996645054]
 
 [node name="npcL1 1" type="CharacterBody2D" parent="." unique_id=1112142747]
-script = SubResource("GDScript_tsis6")
+collision_layer = 2
+script = ExtResource("1_tw55j")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="npcL1 1" unique_id=1438554901]
-position = Vector2(241, 356.5)
+position = Vector2(234.5, 316)
 shape = SubResource("RectangleShape2D_gmq6j")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="npcL1 1" unique_id=640633412]
-position = Vector2(238, 310)
+position = Vector2(236, 316)
 sprite_frames = SubResource("SpriteFrames_iqnpa")
-animation = &"standing npcs"
+animation = &"happy"
 autoplay = "standing npcs"
 
 [node name="npcL1 2" type="CharacterBody2D" parent="." unique_id=1651975392]
+collision_layer = 2
 script = ExtResource("5_iqnpa")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="npcL1 2" unique_id=692719501]
-position = Vector2(790.5, 465)
+position = Vector2(790.5, 425)
 shape = SubResource("RectangleShape2D_6kacy")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="npcL1 2" unique_id=1404312326]
 position = Vector2(790, 423)
 sprite_frames = SubResource("SpriteFrames_4xp6q")
-animation = &"sad npc aniamtion"
+animation = &"happy"
 autoplay = "sad npc aniamtion"

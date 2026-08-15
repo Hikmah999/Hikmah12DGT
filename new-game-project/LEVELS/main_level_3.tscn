@@ -88,4 +88,4 @@ position = Vector2(133, 0)
 shape = SubResource("WorldBoundaryShape2D_swkbq")
 
 [node name="player_2" parent="." unique_id=319582610 instance=ExtResource("2_4fhmh")]
-position = Vector2(298, 468)
+position = Vector2(304, 474)

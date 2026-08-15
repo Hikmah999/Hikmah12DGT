@@ -1,21 +1,26 @@
 extends CharacterBody2D
 
 @export var speed = 200.0
-@export var jump_velocity = -500.0
+@export var jump_velocity = -510.0
 
 var gravity: float = 900.0
-
+var on_ladder: bool = false
+var climb_speed: float = 150.0
 var throw_scene = preload("res://Throw.tscn")
 
 func _physics_process(delta: float) -> void:
-	
-	#graviy
-	if not is_on_floor():
+	#graviy 
+	if is_on_floor():
 		velocity.y += gravity * delta
+			
 		
 	#Jump
 	if Input.is_action_just_pressed("Jump") and is_on_floor():
 		velocity.y = jump_velocity
+	
+	#down
+	if Input.is_action_just_pressed("Down"):
+		velocity.y = 300.0
 		
 	#left/Right
 	var direction := Input.get_axis("Move Right", "Move Left")
@@ -35,6 +40,18 @@ func _physics_process(delta: float) -> void:
 	#Throw
 	if Input.is_action_just_pressed("Throw"):
 		throw_object()
+		
+	#ladder
+	if on_ladder:
+		if Input.is_action_pressed("Jump"):
+			velocity.y = -200
+		elif Input.is_action_pressed("Down"):
+			velocity.y = 200
+		else:
+			velocity.y = 0
+	else:
+		if not is_on_floor():
+			velocity.y += gravity * delta
 		
 	move_and_slide()
 

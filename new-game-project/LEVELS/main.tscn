@@ -6,6 +6,9 @@
 [ext_resource type="Script" uid="uid://bdr788eo8gjgq" path="res://LEVELS/ladder.gd" id="8_bsbpf"]
 [ext_resource type="PackedScene" uid="uid://im7kojlqjli7" path="res://Npcs/npcs level1.tscn" id="9_5lt74"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ut5mw"]
+size = Vector2(93, 315.5)
+
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_0xm2m"]
 distance = -400.0
 
@@ -17,9 +20,6 @@ distance = -5.9925966
 normal = Vector2(-0.9999967, 0.002551012)
 distance = -313.05255
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ut5mw"]
-size = Vector2(93, 299)
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8j8vy"]
 size = Vector2(103.72768, 63.670242)
 
@@ -27,13 +27,16 @@ size = Vector2(103.72768, 63.670242)
 size = Vector2(260.68436, 63.254395)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bsbpf"]
-size = Vector2(249.18341, 67.503876)
+size = Vector2(121.71658, 67.503876)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5lt74"]
 size = Vector2(182.09558, 62.295853)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hdn0m"]
 size = Vector2(129.57898, 108.33055)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a7t48"]
+size = Vector2(28.468079, 58.87825)
 
 [node name="Main" type="Node2D" unique_id=1744168379]
 script = ExtResource("1_0xm2m")
@@ -42,6 +45,13 @@ script = ExtResource("1_0xm2m")
 position = Vector2(576.0258, 325.25)
 scale = Vector2(0.9565538, 0.9565538)
 texture = ExtResource("2_wxe8c")
+
+[node name="ladder" type="Area2D" parent="." unique_id=521089453]
+script = ExtResource("8_bsbpf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ladder" unique_id=1382568101]
+position = Vector2(974, 430.75)
+shape = SubResource("RectangleShape2D_ut5mw")
 
 [node name="boundries" type="StaticBody2D" parent="." unique_id=2027698288]
 position = Vector2(64, 93)
@@ -61,12 +71,8 @@ shape = SubResource("WorldBoundaryShape2D_h2yge")
 [node name="Player1" parent="." unique_id=696723897 instance=ExtResource("2_j0xpv")]
 position = Vector2(318, 537)
 
-[node name="ladder" type="Area2D" parent="." unique_id=521089453]
-script = ExtResource("8_bsbpf")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ladder" unique_id=1382568101]
-position = Vector2(975, 439)
-shape = SubResource("RectangleShape2D_ut5mw")
+[node name="npc" parent="." unique_id=1996645054 instance=ExtResource("9_5lt74")]
+position = Vector2(-77, -103)
 
 [node name="the blocks" type="StaticBody2D" parent="." unique_id=2013054262]
 position = Vector2(579.0265, 327.5)
@@ -83,8 +89,8 @@ scale = Vector2(0.9999995, 0.9999993)
 shape = SubResource("RectangleShape2D_kf54x")
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="the blocks" unique_id=678605986]
-position = Vector2(424.5448, -17.938354)
-scale = Vector2(0.9999996, 0.9999996)
+position = Vector2(488.27814, -17.938354)
+scale = Vector2(0.9999995, 0.99999946)
 shape = SubResource("RectangleShape2D_bsbpf")
 
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="the blocks" unique_id=2023968560]
@@ -97,5 +103,10 @@ position = Vector2(-488.4265, 252.07431)
 scale = Vector2(0.9999995, 0.99999946)
 shape = SubResource("RectangleShape2D_hdn0m")
 
-[node name="npc" parent="." unique_id=1996645054 instance=ExtResource("9_5lt74")]
-position = Vector2(-77, -103)
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="the blocks" unique_id=869810631]
+position = Vector2(316.10394, -18.41748)
+scale = Vector2(0.9999996, 0.9999996)
+shape = SubResource("RectangleShape2D_a7t48")
+
+[connection signal="body_entered" from="ladder" to="ladder" method="_on_body_entered"]
+[connection signal="body_exited" from="ladder" to="ladder" method="_on_body_exited"]

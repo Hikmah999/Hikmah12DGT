@@ -1,7 +1,6 @@
 [gd_scene format=3 uid="uid://4esvy86q8h8w"]
 
 [ext_resource type="FontFile" uid="uid://kakemuqg7gk7" path="res://I-pixel-u.ttf" id="1_fw52b"]
-[ext_resource type="Script" uid="uid://bnu1enx47kf7c" path="res://menu/character_select.gd" id="3_v3dpv"]
 [ext_resource type="Texture2D" uid="uid://djwmutinmm5of" path="res://characters/brighteyes IDLE-1.png.png" id="4_ghmnu"]
 [ext_resource type="Texture2D" uid="uid://b7xbmg1a5sqin" path="res://scenes/shed-chicken IDLE-1.png.png" id="4_ryabp"]
 [ext_resource type="Script" uid="uid://c1cm6poc7tnw2" path="res://scenes/brighteyes_idle.gd" id="5_ryabp"]
@@ -34,6 +33,28 @@ func _on_shedchicken_pressed() -> void:
 
 
 func _on_shed_chicken_idle_pressed() -> void:
+	pass # Replace with function body.
+"
+
+[sub_resource type="GDScript" id="GDScript_bc6yv"]
+script/source = "extends Control
+
+# Assign your character scene paths here
+const CHAR_1_PATH = \"res://characters/character_one.tscn\"
+const CHAR_2_PATH = \"res://characters/character_two.tscn\"
+
+func _on_char_1_button_pressed() -> void:
+	Global.selected_character_scene = CHAR_1_PATH
+	get_tree().change_scene_to_file(\"res://level_1.tscn\")
+
+func _on_char_2_button_pressed() -> void:
+	Global.selected_character_scene = CHAR_2_PATH
+	get_tree().change_scene_to_file(\"res://level_1.tscn\")
+
+func _on_brighteyes_idle_pressed() -> void:
+	pass # Replace with function body.
+
+func _on_ShedChicken_idle_pressed() -> void:
 	pass # Replace with function body.
 "
 
@@ -113,7 +134,7 @@ text = "SHED CHICKEN"
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
-script = ExtResource("3_v3dpv")
+script = SubResource("GDScript_bc6yv")
 
 [node name="ShedChickenIdle1_png" type="Sprite2D" parent="Character select" unique_id=124429965]
 position = Vector2(770.00006, 320.00003)

@@ -72,7 +72,7 @@ RIGHT: D
 
 LEFT: A
 
-THROW: SHIFT
+THROW: SPACE
 "
 
 [node name="Label3" type="Label" parent="." unique_id=51515766]
@@ -91,7 +91,7 @@ RIGHT: ➡
 
 LEFT: ⬅️
 
-THROW: SHIFT
+THROW: SPACE
 "
 
 [connection signal="pressed" from="Button_1" to="Button_1" method="_on_pressed"]

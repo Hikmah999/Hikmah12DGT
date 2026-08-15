@@ -17,6 +17,7 @@
 [ext_resource type="Texture2D" uid="uid://bmmo31pkqy6am" path="res://characters/Elliot IDLE-2.png.png" id="15_e5f86"]
 [ext_resource type="Texture2D" uid="uid://da5udhdjnm0ka" path="res://characters/Elliot IDLE-3.png.png" id="16_w3ynp"]
 [ext_resource type="Texture2D" uid="uid://bhpwh2n41scs4" path="res://characters/Elliot IDLE-4.png.png" id="17_vxc55"]
+[ext_resource type="Script" uid="uid://dsdg6rwdro18w" path="res://LEVELS/ladder_3.gd" id="18_kg5fa"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6xws2"]
 size = Vector2(265, 67)
@@ -25,7 +26,7 @@ size = Vector2(265, 67)
 size = Vector2(50.5, 71)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tow0v"]
-size = Vector2(241, 63)
+size = Vector2(150, 63)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_q6b10"]
 size = Vector2(263.5, 67.5)
@@ -38,6 +39,9 @@ size = Vector2(102, 116)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_df4ce"]
 size = Vector2(49, 61)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a7t48"]
+size = Vector2(10, 62)
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_w7wf4"]
 normal = Vector2(1, 0)
@@ -71,7 +75,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("7_psl6g")
 }],
-"loop": true,
+"loop": 1,
 "name": &"standing npcs",
 "speed": 5.0
 }]
@@ -94,7 +98,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("12_i47cr")
 }],
-"loop": true,
+"loop": 1,
 "name": &"standing npcs",
 "speed": 5.0
 }]
@@ -114,13 +118,16 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("17_vxc55")
 }],
-"loop": true,
+"loop": 1,
 "name": &"standing npcs",
 "speed": 5.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_w52gv"]
 size = Vector2(23, 0)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yiuh7"]
+size = Vector2(84, 267)
 
 [node name="main L2" type="Node2D" unique_id=1823888605]
 
@@ -140,7 +147,7 @@ position = Vector2(399.75, 247.5)
 shape = SubResource("RectangleShape2D_jk1do")
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="the blocks" unique_id=1134771805]
-position = Vector2(663.5, 346.5)
+position = Vector2(709, 346.5)
 shape = SubResource("RectangleShape2D_tow0v")
 
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="the blocks" unique_id=768405606]
@@ -158,6 +165,10 @@ shape = SubResource("RectangleShape2D_gjy6k")
 [node name="CollisionShape2D7" type="CollisionShape2D" parent="the blocks" unique_id=1854516]
 position = Vector2(864.5, 266)
 shape = SubResource("RectangleShape2D_df4ce")
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="the blocks" unique_id=3365051]
+position = Vector2(539, 347)
+shape = SubResource("RectangleShape2D_a7t48")
 
 [node name="boundries" type="StaticBody2D" parent="." unique_id=733890240]
 
@@ -220,3 +231,13 @@ autoplay = "standing npcs"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="npc L2 1" unique_id=684102059]
 position = Vector2(-21.5, 300)
 shape = SubResource("RectangleShape2D_w52gv")
+
+[node name="ladder3" type="Area2D" parent="." unique_id=353616285]
+script = ExtResource("18_kg5fa")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ladder3" unique_id=1262398211]
+position = Vector2(587, 453)
+shape = SubResource("RectangleShape2D_yiuh7")
+
+[connection signal="body_entered" from="ladder3" to="ladder3" method="_on_body_entered"]
+[connection signal="body_exited" from="ladder3" to="ladder3" method="_on_body_exited"]
