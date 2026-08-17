@@ -14,9 +14,6 @@
 [ext_resource type="Texture2D" uid="uid://dxnbhicsbivh1" path="res://characters/two time IDLE-4.png.png" id="9_41vp0"]
 [ext_resource type="Texture2D" uid="uid://hvkg6emc7hv4" path="res://characters/two time IDLE-5.png.png" id="10_v0qjv"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_gmq6j"]
-size = Vector2(19, 70)
-
 [sub_resource type="SpriteFrames" id="SpriteFrames_iqnpa"]
 animations = [{
 "frames": [{
@@ -45,8 +42,8 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_6kacy"]
-size = Vector2(17, 78)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gmq6j"]
+size = Vector2(25, 70)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_4xp6q"]
 animations = [{
@@ -79,15 +76,14 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="npc" type="Node2D" unique_id=1996645054]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6kacy"]
+size = Vector2(17, 78)
 
-[node name="npcL1 1" type="CharacterBody2D" parent="." unique_id=1112142747]
+[node name="npc" type="Node2D" unique_id=1996645054 groups=["npc"]]
+
+[node name="npcL1 1" type="CharacterBody2D" parent="." unique_id=1112142747 groups=["npc"]]
 collision_layer = 2
 script = ExtResource("1_tw55j")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="npcL1 1" unique_id=1438554901]
-position = Vector2(234.5, 316)
-shape = SubResource("RectangleShape2D_gmq6j")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="npcL1 1" unique_id=640633412]
 position = Vector2(236, 316)
@@ -95,16 +91,20 @@ sprite_frames = SubResource("SpriteFrames_iqnpa")
 animation = &"happy"
 autoplay = "standing npcs"
 
-[node name="npcL1 2" type="CharacterBody2D" parent="." unique_id=1651975392]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="npcL1 1" unique_id=1438554901]
+position = Vector2(237.5, 316)
+shape = SubResource("RectangleShape2D_gmq6j")
+
+[node name="npcL1 2" type="CharacterBody2D" parent="." unique_id=1651975392 groups=["npc"]]
 collision_layer = 2
 script = ExtResource("5_iqnpa")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="npcL1 2" unique_id=692719501]
-position = Vector2(790.5, 425)
-shape = SubResource("RectangleShape2D_6kacy")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="npcL1 2" unique_id=1404312326]
 position = Vector2(790, 423)
 sprite_frames = SubResource("SpriteFrames_4xp6q")
 animation = &"happy"
 autoplay = "sad npc aniamtion"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="npcL1 2" unique_id=692719501]
+position = Vector2(790.5, 425)
+shape = SubResource("RectangleShape2D_6kacy")

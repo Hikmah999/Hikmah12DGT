@@ -38,6 +38,6 @@ func _on_body_entered(body: Node2D) -> void:
 	print("CARD HIT: ", body.name)
 	
 	if body.is_in_group("npc"):
-		if body.has_method("make_happy"):
+		if body.has_method("happy"):
 			body.make_happy()
 			queue_free
