@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://lavy3grbre3s" path="res://menu/settingbutton.gd" id="1_lti8b"]
 [ext_resource type="FontFile" uid="uid://kakemuqg7gk7" path="res://I-pixel-u.ttf" id="1_mae5d"]
 [ext_resource type="Script" uid="uid://j3dj88fhab1p" path="res://menu/playbutton.gd" id="1_ouk20"]
+[ext_resource type="Texture2D" uid="uid://b61lwulp0xegx" path="res://level images/Screenshot 2026-08-18 132503.png" id="1_svuvw"]
 [ext_resource type="Script" uid="uid://c7kalgmmcnpef" path="res://LEVELS/levels.gd" id="2_mae5d"]
 
 [node name="menu" type="Control" unique_id=135649398]
@@ -13,14 +14,10 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="ColorRect" type="ColorRect" parent="." unique_id=1437046636]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-color = Color(0.50534403, 0.5053441, 0.50534403, 1)
+[node name="Screenshot20260818132503" type="Sprite2D" parent="." unique_id=204605196]
+position = Vector2(576.54376, 324.25)
+scale = Vector2(1.0425361, 1.0425361)
+texture = ExtResource("1_svuvw")
 
 [node name="mainmenubutton" type="VBoxContainer" parent="." unique_id=296615031]
 layout_mode = 1
@@ -42,7 +39,7 @@ layout_mode = 2
 size_flags_vertical = 3
 theme_override_fonts/font = ExtResource("1_mae5d")
 theme_override_font_sizes/font_size = 23
-text = "PLAY: TUTORIAL (ON/OFF)"
+text = "PLAY"
 script = ExtResource("1_ouk20")
 
 [node name="levels" type="Button" parent="mainmenubutton" unique_id=491013944]
@@ -66,10 +63,10 @@ layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -84.0
+offset_left = -151.0
 offset_top = 112.0
-offset_right = 82.0
-offset_bottom = 195.0
+offset_right = 149.0
+offset_bottom = 237.0
 grow_horizontal = 2
 theme_override_fonts/font = ExtResource("1_mae5d")
 theme_override_font_sizes/font_size = 100
