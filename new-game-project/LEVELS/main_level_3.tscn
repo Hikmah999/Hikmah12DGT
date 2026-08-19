@@ -38,7 +38,7 @@ distance = -1144.4857
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_swkbq"]
 normal = Vector2(0, 1)
 
-[node name="main_level_3" type="Node2D" unique_id=2090028774]
+[node name="main_level_3" type="Node2D" unique_id=2090028774 groups=["ml3"]]
 script = ExtResource("1_h3rgl")
 
 [node name="npcslevel3" parent="." unique_id=2134047930 instance=ExtResource("1_h63em")]
@@ -91,7 +91,7 @@ shape = SubResource("WorldBoundaryShape2D_1ua0m")
 position = Vector2(133, 0)
 shape = SubResource("WorldBoundaryShape2D_swkbq")
 
-[node name="player_2" parent="." unique_id=319582610 instance=ExtResource("2_4fhmh")]
+[node name="player_2" parent="." unique_id=319582610 groups=["ml3"] instance=ExtResource("2_4fhmh")]
 position = Vector2(304, 474)
 
 [node name="level 3" type="Label" parent="." unique_id=335612184]
