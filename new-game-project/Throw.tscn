@@ -7,6 +7,7 @@
 size = Vector2(18, 23)
 
 [node name="Area2D" type="Area2D" unique_id=1210923590]
+collision_mask = 2
 script = ExtResource("1_og28m")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=498005790]

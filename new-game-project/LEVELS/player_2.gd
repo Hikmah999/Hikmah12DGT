@@ -61,8 +61,8 @@ func throw_object() -> void:
 	
 	projectile.global_position = $ThrowPoint.global_position
 	
-	var throw_direction: float = -1.0
+	var throw_direction: float = 1.0
 	if $AnimatedSprite2D.flip_h:
-		throw_direction = 1.0
+		throw_direction = -1.0
 		
 	projectile.setup(throw_direction)
