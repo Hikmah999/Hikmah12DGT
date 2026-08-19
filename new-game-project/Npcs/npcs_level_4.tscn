@@ -2,32 +2,47 @@
 
 [ext_resource type="Texture2D" uid="uid://ck474hf2lmjmr" path="res://level images/Screenshot 2026-08-14 094326.png" id="1_wdkqa"]
 [ext_resource type="Texture2D" uid="uid://qx4q34qgt5ty" path="res://characters/007e7 idle-1.png.png" id="1_y5vgr"]
+[ext_resource type="Script" uid="uid://0j8e428k7lcs" path="res://Npcs/npc_l_4_1.gd" id="2_ex0ui"]
 [ext_resource type="Texture2D" uid="uid://c4srytfuuadwv" path="res://characters/007e7 idle-2.png.png" id="2_wdkqa"]
 [ext_resource type="Texture2D" uid="uid://cwfuhv8corac4" path="res://characters/007e7 idle-3.png.png" id="3_og33u"]
+[ext_resource type="Texture2D" uid="uid://c23ari40hbnwi" path="res://npcs turn happy/Happy 007e7-1.png.png" id="3_xe8hm"]
 [ext_resource type="Texture2D" uid="uid://bul0b0wbiq8fh" path="res://characters/007e7 idle-4.png.png" id="4_gcj1v"]
 [ext_resource type="Texture2D" uid="uid://dtn5usrfwcxcm" path="res://character level 3/PumpkinDuse IDLE-1.png.png" id="5_0ypa4"]
 [ext_resource type="Texture2D" uid="uid://dwm6wf6eew13h" path="res://character level 3/PumpkinDuse IDLE-2.png.png" id="6_vtpky"]
 [ext_resource type="Texture2D" uid="uid://c6saefv82h310" path="res://character level 3/PumpkinDuse IDLE-3.png.png" id="7_5cgq6"]
+[ext_resource type="Script" uid="uid://cxc3sd2gx3k6n" path="res://Npcs/npc_l_4_2.gd" id="8_60h3i"]
 [ext_resource type="Texture2D" uid="uid://jjl12ejehvab" path="res://character level 3/PumpkinDuse IDLE-4.png.png" id="8_jcakr"]
 [ext_resource type="Texture2D" uid="uid://be6oqr8byece8" path="res://characters/Taph IDLE-1.png.png" id="9_0qpbb"]
+[ext_resource type="Texture2D" uid="uid://notxrjwy5n66" path="res://npcs turn happy/Happy PumpkinDuse-1.png.png" id="9_80mtm"]
 [ext_resource type="Texture2D" uid="uid://dqfh8nqvcqhv6" path="res://characters/Taph IDLE-2.png.png" id="10_8ygym"]
 [ext_resource type="Texture2D" uid="uid://bbrebkb3nw762" path="res://characters/Taph IDLE-3.png.png" id="11_27xrw"]
 [ext_resource type="Texture2D" uid="uid://dl4km0yjrn3yx" path="res://characters/Taph IDLE-4.png.png" id="12_ex0ui"]
 [ext_resource type="Texture2D" uid="uid://2ykdwyoou4wy" path="res://characters/two time IDLE-1.png.png" id="13_xe8hm"]
 [ext_resource type="Texture2D" uid="uid://cf818oiwxr1wg" path="res://characters/two time IDLE-2.png.png" id="14_60h3i"]
+[ext_resource type="Script" uid="uid://bd4m1qoj2p3np" path="res://Npcs/npc_l_4_3.gd" id="14_n0psx"]
 [ext_resource type="Texture2D" uid="uid://dn2r4j0m0n2jk" path="res://characters/two time IDLE-3.png.png" id="15_80mtm"]
+[ext_resource type="Texture2D" uid="uid://c1vyx1wct7wv4" path="res://npcs turn happy/Happy Taph-1.png.png" id="15_huyls"]
 [ext_resource type="Texture2D" uid="uid://dxnbhicsbivh1" path="res://characters/two time IDLE-4.png.png" id="16_n0psx"]
 [ext_resource type="Texture2D" uid="uid://hvkg6emc7hv4" path="res://characters/two time IDLE-5.png.png" id="17_huyls"]
 [ext_resource type="Texture2D" uid="uid://c7t7h0ulfjk0q" path="res://characters/Elliot IDLE-1.png.png" id="18_72ae5"]
 [ext_resource type="Texture2D" uid="uid://bmmo31pkqy6am" path="res://characters/Elliot IDLE-2.png.png" id="19_v471l"]
+[ext_resource type="Script" uid="uid://dmnbadr0l3dv2" path="res://Npcs/npc_l_4_4.gd" id="20_72ae5"]
 [ext_resource type="Texture2D" uid="uid://da5udhdjnm0ka" path="res://characters/Elliot IDLE-3.png.png" id="20_kg7og"]
 [ext_resource type="Texture2D" uid="uid://bhpwh2n41scs4" path="res://characters/Elliot IDLE-4.png.png" id="21_8jjol"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_j37b8"]
-size = Vector2(15, 0)
+[ext_resource type="Texture2D" uid="uid://dko376utihvsa" path="res://npcs turn happy/Happy Two time-1.png (1).png" id="21_v471l"]
+[ext_resource type="Script" uid="uid://b7n0f4d3xxky7" path="res://Npcs/npc_l_4_5.gd" id="27_kg7og"]
+[ext_resource type="Texture2D" uid="uid://booqifos1x1hi" path="res://npcs turn happy/Happy Elliot-1.png.png" id="28_8jjol"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_j37b8"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_xe8hm")
+}],
+"loop": true,
+"name": &"happy",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("1_y5vgr")
@@ -41,16 +56,24 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("4_gcj1v")
 }],
-"loop": 1,
+"loop": true,
 "name": &"npc 1 standing",
 "speed": 5.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_iw1tl"]
-size = Vector2(14, 0)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_j37b8"]
+size = Vector2(16, 79)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_iw1tl"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_80mtm")
+}],
+"loop": true,
+"name": &"happy",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("5_0ypa4")
@@ -64,16 +87,24 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("8_jcakr")
 }],
-"loop": 1,
+"loop": true,
 "name": &"npc 2 standing",
 "speed": 5.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_30p4n"]
-size = Vector2(22, 0)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_iw1tl"]
+size = Vector2(20, 77)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_30p4n"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("15_huyls")
+}],
+"loop": true,
+"name": &"happy",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("9_0qpbb")
@@ -87,16 +118,24 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("12_ex0ui")
 }],
-"loop": 1,
+"loop": true,
 "name": &"npc 3 standing",
 "speed": 5.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_36rpf"]
-size = Vector2(24, 0)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_30p4n"]
+size = Vector2(19, 79)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_36rpf"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("21_v471l")
+}],
+"loop": true,
+"name": &"happy",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("13_xe8hm")
@@ -113,16 +152,24 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("17_huyls")
 }],
-"loop": 1,
+"loop": true,
 "name": &"npc 4 standing",
 "speed": 5.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_pmfnr"]
-size = Vector2(17.25, 0)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_36rpf"]
+size = Vector2(24, 76)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_pmfnr"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("28_8jjol")
+}],
+"loop": true,
+"name": &"happy",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("18_72ae5")
@@ -136,10 +183,13 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("21_8jjol")
 }],
-"loop": 1,
+"loop": true,
 "name": &"npc 5 standing",
 "speed": 5.0
 }]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pmfnr"]
+size = Vector2(15.25, 79)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6uap5"]
 size = Vector2(251, 61)
@@ -176,19 +226,17 @@ distance = -1144.4857
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_5cgq6"]
 normal = Vector2(0, 1)
 
-[node name="npcs_level_4" type="Node2D" unique_id=560533176]
+[node name="npcs_level_4" type="Node2D" unique_id=560533176 groups=["Npclv4"]]
 
 [node name="Screenshot20260814094326" type="Sprite2D" parent="." unique_id=1553975482]
 position = Vector2(575.1654, 324.50003)
 scale = Vector2(0.95722747, 0.957227)
 texture = ExtResource("1_wdkqa")
 
-[node name="npc L4 1" type="CharacterBody2D" parent="." unique_id=547943411]
+[node name="npc L4 1" type="CharacterBody2D" parent="." unique_id=547943411 groups=["Npclv4"]]
 position = Vector2(-57, -132)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="npc L4 1" unique_id=1761424288]
-position = Vector2(135.5, 287)
-shape = SubResource("RectangleShape2D_j37b8")
+collision_layer = 2
+script = ExtResource("2_ex0ui")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="npc L4 1" unique_id=912459645]
 position = Vector2(135, 246)
@@ -196,12 +244,14 @@ sprite_frames = SubResource("SpriteFrames_j37b8")
 animation = &"npc 1 standing"
 autoplay = "npc 1 standing"
 
-[node name="npc L4 2" type="CharacterBody2D" parent="." unique_id=192110026]
-position = Vector2(687, 312)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="npc L4 1" unique_id=1761424288]
+position = Vector2(136, 247.5)
+shape = SubResource("RectangleShape2D_j37b8")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="npc L4 2" unique_id=1546782787]
-position = Vector2(209, 287)
-shape = SubResource("RectangleShape2D_iw1tl")
+[node name="npc L4 2" type="CharacterBody2D" parent="." unique_id=192110026 groups=["Npclv4"]]
+position = Vector2(687, 312)
+collision_layer = 2
+script = ExtResource("8_60h3i")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="npc L4 2" unique_id=1057435884]
 position = Vector2(213, 246)
@@ -209,44 +259,54 @@ sprite_frames = SubResource("SpriteFrames_iw1tl")
 animation = &"npc 2 standing"
 autoplay = "npc 2 standing"
 
-[node name="npc L4 3" type="CharacterBody2D" parent="." unique_id=273793198]
-position = Vector2(-23, 315)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="npc L4 2" unique_id=1546782787]
+position = Vector2(214, 248.5)
+shape = SubResource("RectangleShape2D_iw1tl")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="npc L4 3" unique_id=851861491]
-position = Vector2(301, 285)
-shape = SubResource("RectangleShape2D_30p4n")
+[node name="npc L4 3" type="CharacterBody2D" parent="." unique_id=273793198 groups=["Npclv4"]]
+position = Vector2(-23, 315)
+collision_layer = 2
+script = ExtResource("14_n0psx")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="npc L4 3" unique_id=1541313631]
 position = Vector2(300, 245)
 sprite_frames = SubResource("SpriteFrames_30p4n")
-animation = &"npc 3 standing"
+animation = &"happy"
 autoplay = "npc 3 standing"
 
-[node name="npc L4 4" type="CharacterBody2D" parent="." unique_id=2014161881]
-position = Vector2(141, 191)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="npc L4 3" unique_id=851861491]
+position = Vector2(298.5, 245.5)
+shape = SubResource("RectangleShape2D_30p4n")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="npc L4 4" unique_id=187990668]
-position = Vector2(370, 286)
-shape = SubResource("RectangleShape2D_36rpf")
+[node name="npc L4 4" type="CharacterBody2D" parent="." unique_id=2014161881 groups=["Npclv4"]]
+position = Vector2(141, 191)
+collision_layer = 2
+script = ExtResource("20_72ae5")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="npc L4 4" unique_id=255938572]
 position = Vector2(370, 247)
 sprite_frames = SubResource("SpriteFrames_36rpf")
-animation = &"npc 4 standing"
+animation = &"happy"
 autoplay = "npc 4 standing"
 
-[node name="npc L4 5" type="CharacterBody2D" parent="." unique_id=22087035]
-position = Vector2(613, -134)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="npc L4 4" unique_id=187990668]
+position = Vector2(370, 248)
+shape = SubResource("RectangleShape2D_36rpf")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="npc L4 5" unique_id=1127943383]
-position = Vector2(441.375, 284)
-shape = SubResource("RectangleShape2D_pmfnr")
+[node name="npc L4 5" type="CharacterBody2D" parent="." unique_id=22087035 groups=["Npclv4"]]
+position = Vector2(613, -134)
+collision_layer = 2
+script = ExtResource("27_kg7og")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="npc L4 5" unique_id=1452940250]
 position = Vector2(441, 244)
 sprite_frames = SubResource("SpriteFrames_pmfnr")
-animation = &"npc 5 standing"
+animation = &"happy"
 autoplay = "npc 5 standing"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="npc L4 5" unique_id=1127943383]
+position = Vector2(440.375, 244.5)
+shape = SubResource("RectangleShape2D_pmfnr")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1780976227]
 
@@ -275,7 +335,7 @@ position = Vector2(593, 508)
 shape = SubResource("RectangleShape2D_1o3qc")
 
 [node name="CollisionShape2D7" type="CollisionShape2D" parent="StaticBody2D" unique_id=628050623]
-position = Vector2(732, 247.75)
+position = Vector2(732, 245.75)
 shape = SubResource("RectangleShape2D_yiuh7")
 
 [node name="boundries" type="StaticBody2D" parent="." unique_id=136842431]

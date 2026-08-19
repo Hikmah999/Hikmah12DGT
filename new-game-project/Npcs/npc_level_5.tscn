@@ -1,0 +1,94 @@
+[gd_scene format=3 uid="uid://dgnrtw6ncau0n"]
+
+[ext_resource type="Texture2D" uid="uid://ttskyda8c7xt" path="res://level images/Screenshot 2026-08-14 094357.png" id="1_83wcm"]
+[ext_resource type="Texture2D" uid="uid://booqifos1x1hi" path="res://npcs turn happy/Happy Elliot-1.png.png" id="2_i7kwc"]
+[ext_resource type="Texture2D" uid="uid://c7t7h0ulfjk0q" path="res://characters/Elliot IDLE-1.png.png" id="3_od7e0"]
+[ext_resource type="Texture2D" uid="uid://bmmo31pkqy6am" path="res://characters/Elliot IDLE-2.png.png" id="4_8b6ou"]
+[ext_resource type="Texture2D" uid="uid://da5udhdjnm0ka" path="res://characters/Elliot IDLE-3.png.png" id="5_fccdw"]
+[ext_resource type="Texture2D" uid="uid://bhpwh2n41scs4" path="res://characters/Elliot IDLE-4.png.png" id="6_hxgse"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_t82q7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_i7kwc")
+}],
+"loop": true,
+"name": &"happy",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_od7e0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_8b6ou")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_fccdw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_hxgse")
+}],
+"loop": true,
+"name": &"standing npc",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yj75e"]
+size = Vector2(24, 81.5)
+
+[node name="npclevel5" type="Node2D" unique_id=1578429773]
+
+[node name="Screenshot20260814094357" type="Sprite2D" parent="." unique_id=607710513]
+position = Vector2(576.3971, 325)
+scale = Vector2(0.95588243, 0.9558824)
+texture = ExtResource("1_83wcm")
+
+[node name="1" type="CharacterBody2D" parent="." unique_id=159596873]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="1" unique_id=131849688]
+position = Vector2(40, 103)
+sprite_frames = SubResource("SpriteFrames_t82q7")
+animation = &"standing npc"
+autoplay = "standing npc"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="1" unique_id=1328912366]
+position = Vector2(41, 100.75)
+shape = SubResource("RectangleShape2D_yj75e")
+
+[node name="2" type="CharacterBody2D" parent="." unique_id=2100546804]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="2" unique_id=1192968605]
+
+[node name="3" type="CharacterBody2D" parent="." unique_id=1143756284]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="3" unique_id=400827498]
+
+[node name="4" type="CharacterBody2D" parent="." unique_id=2057611718]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="4" unique_id=1657872383]
+
+[node name="5" type="CharacterBody2D" parent="." unique_id=1139415677]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="5" unique_id=648573941]
+
+[node name="6" type="CharacterBody2D" parent="." unique_id=1800805378]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="6" unique_id=844229080]
+
+[node name="7" type="CharacterBody2D" parent="." unique_id=1727449146]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="7" unique_id=1340484617]
+
+[node name="8" type="CharacterBody2D" parent="." unique_id=2066089574]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="8" unique_id=412098449]
+
+[node name="9" type="CharacterBody2D" parent="." unique_id=1433029611]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="9" unique_id=451448370]
+
+[node name="10" type="CharacterBody2D" parent="." unique_id=656575678]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="10" unique_id=1720526653]

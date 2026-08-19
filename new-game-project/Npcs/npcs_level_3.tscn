@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://y4hlx2q1o1ts" path="res://level images/Screenshot 2026-08-14 094225.png" id="1_dlfnu"]
 [ext_resource type="Script" uid="uid://dlsermthjssgk" path="res://Npcs/npc_l_3_1.gd" id="1_dyi28"]
 [ext_resource type="Texture2D" uid="uid://dqdjve60hrtx7" path="res://character level 3/Blox-Bot IDLE-1.png.png" id="2_dlfnu"]
+[ext_resource type="Texture2D" uid="uid://dkdt6m3f4245r" path="res://npcs turn happy/Happy Blox-Bot-1.png.png" id="3_lo0lo"]
 [ext_resource type="Texture2D" uid="uid://d3omjwc0r6j5j" path="res://character level 3/Blox-Bot IDLE-2.png.png" id="3_xqvfo"]
 [ext_resource type="Texture2D" uid="uid://dpcjv1hktdfas" path="res://character level 3/Blox-Bot IDLE-3.png.png" id="4_3v7ch"]
 [ext_resource type="Texture2D" uid="uid://p7i0a2lkbcx0" path="res://character level 3/Blox-Bot IDLE-4.png.png" id="5_hkbw4"]
@@ -10,23 +11,31 @@
 [ext_resource type="Texture2D" uid="uid://dsqu0i56h5fhl" path="res://character level 3/Chance IDLE-1.png.png" id="7_x74ad"]
 [ext_resource type="Texture2D" uid="uid://cp5s5krqjiev1" path="res://character level 3/Chance IDLE-2.png.png" id="8_p5cwj"]
 [ext_resource type="Texture2D" uid="uid://d1cyj5w8h514" path="res://character level 3/Chance IDLE-3.png.png" id="9_7mm61"]
+[ext_resource type="Texture2D" uid="uid://dvwdhlugkior1" path="res://npcs turn happy/Happy Chance-1.png.png" id="9_x74ad"]
 [ext_resource type="Texture2D" uid="uid://cy5k7ewnfdgyg" path="res://character level 3/Chance IDLE-4.png.png" id="10_urpif"]
-[ext_resource type="Script" uid="uid://bss4mgihbqfdc" path="res://menu/character_body_2d.gd" id="11_qh5oh"]
 [ext_resource type="Texture2D" uid="uid://1lqwg543725j" path="res://character level 3/guest IDLE-1.png.png" id="12_5i8yj"]
 [ext_resource type="Texture2D" uid="uid://y0viv1sd4kxu" path="res://character level 3/guest IDLE-2.png.png" id="13_sww1q"]
 [ext_resource type="Texture2D" uid="uid://flf4e6frvsvh" path="res://character level 3/guest IDLE-3.png.png" id="14_d3mws"]
+[ext_resource type="Script" uid="uid://bsxbkqhnjmahb" path="res://Npcs/npc_l_3_3.gd" id="14_p5cwj"]
+[ext_resource type="Texture2D" uid="uid://do4yhywunkxiv" path="res://npcs turn happy/Happy guest-1.png.png" id="15_7mm61"]
 [ext_resource type="Texture2D" uid="uid://dbdfxfdilp2xr" path="res://character level 3/guest IDLE-4.png.png" id="15_af10a"]
 [ext_resource type="Script" uid="uid://bsc35stbbvp82" path="res://Npcs/npc_l_3_4.gd" id="16_w3p6x"]
 [ext_resource type="Texture2D" uid="uid://dtn5usrfwcxcm" path="res://character level 3/PumpkinDuse IDLE-1.png.png" id="17_20d4d"]
 [ext_resource type="Texture2D" uid="uid://dwm6wf6eew13h" path="res://character level 3/PumpkinDuse IDLE-2.png.png" id="18_jghys"]
 [ext_resource type="Texture2D" uid="uid://c6saefv82h310" path="res://character level 3/PumpkinDuse IDLE-3.png.png" id="19_r2qgb"]
 [ext_resource type="Texture2D" uid="uid://jjl12ejehvab" path="res://character level 3/PumpkinDuse IDLE-4.png.png" id="20_ce5rq"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_f7rwd"]
-size = Vector2(18, 0)
+[ext_resource type="Texture2D" uid="uid://notxrjwy5n66" path="res://npcs turn happy/Happy PumpkinDuse-1.png.png" id="21_urpif"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_fdxdt"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_lo0lo")
+}],
+"loop": true,
+"name": &"happy",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("2_dlfnu")
@@ -40,16 +49,24 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("5_hkbw4")
 }],
-"loop": 1,
+"loop": true,
 "name": &"standing npcs",
 "speed": 5.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_hbrye"]
-size = Vector2(12, 0)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f7rwd"]
+size = Vector2(20, 80)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_qk014"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_x74ad")
+}],
+"loop": true,
+"name": &"happy",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("7_x74ad")
@@ -63,16 +80,24 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("10_urpif")
 }],
-"loop": 1,
+"loop": true,
 "name": &"standing npcs",
 "speed": 5.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_dlbmc"]
-size = Vector2(17, 0)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hbrye"]
+size = Vector2(22, 79)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_dyvbm"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("15_7mm61")
+}],
+"loop": true,
+"name": &"happy",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("12_5i8yj")
@@ -86,16 +111,24 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("15_af10a")
 }],
-"loop": 1,
+"loop": true,
 "name": &"standing npcs",
 "speed": 5.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_3v0ly"]
-size = Vector2(19, 0)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dlbmc"]
+size = Vector2(23, 78)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_b1nka"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("21_urpif")
+}],
+"loop": true,
+"name": &"happy",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("17_20d4d")
@@ -109,53 +142,55 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("20_ce5rq")
 }],
-"loop": 1,
+"loop": true,
 "name": &"standing npcs ",
 "speed": 5.0
 }]
 
-[node name="npcslevel3" type="Node2D" unique_id=2134047930]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3v0ly"]
+size = Vector2(21.5, 81)
+
+[node name="npcslevel3" type="Node2D" unique_id=2134047930 groups=["npcLv3"]]
 
 [node name="Screenshot20260814094225" type="Sprite2D" parent="." unique_id=1305379344]
 position = Vector2(575.7245, 323.25)
 scale = Vector2(0.95642537, 0.9564254)
 texture = ExtResource("1_dlfnu")
 
-[node name="npc l3 1" type="CharacterBody2D" parent="." unique_id=208944403]
+[node name="npc l3 1" type="CharacterBody2D" parent="." unique_id=208944403 groups=["npcLv3"]]
 position = Vector2(-122, 218)
+collision_layer = 2
 script = ExtResource("1_dyi28")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="npc l3 1" unique_id=1010079338]
-position = Vector2(201, 362)
-shape = SubResource("RectangleShape2D_f7rwd")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="npc l3 1" unique_id=847087054]
 position = Vector2(198, 322)
 sprite_frames = SubResource("SpriteFrames_fdxdt")
-animation = &"standing npcs"
+animation = &"happy"
 autoplay = "standing npcs"
 
-[node name="npc L3 2" type="CharacterBody2D" parent="." unique_id=402867423]
-position = Vector2(791, 218)
-script = ExtResource("6_lo0lo")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="npc l3 1" unique_id=1010079338]
+position = Vector2(198, 322)
+shape = SubResource("RectangleShape2D_f7rwd")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="npc L3 2" unique_id=696831148]
-position = Vector2(313, 359)
-shape = SubResource("RectangleShape2D_hbrye")
+[node name="npc L3 2" type="CharacterBody2D" parent="." unique_id=402867423 groups=["npcLv3"]]
+position = Vector2(791, 218)
+collision_layer = 2
+script = ExtResource("6_lo0lo")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="npc L3 2" unique_id=44141618]
 position = Vector2(314, 317)
 sprite_frames = SubResource("SpriteFrames_qk014")
-animation = &"standing npcs"
+animation = &"happy"
 autoplay = "standing npcs"
 
-[node name="npc L3 3" type="CharacterBody2D" parent="." unique_id=1023396889]
-position = Vector2(626, -164)
-script = ExtResource("11_qh5oh")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="npc L3 2" unique_id=696831148]
+position = Vector2(314, 319.5)
+shape = SubResource("RectangleShape2D_hbrye")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="npc L3 3" unique_id=185380608]
-position = Vector2(421.5, 360)
-shape = SubResource("RectangleShape2D_dlbmc")
+[node name="npc L3 3" type="CharacterBody2D" parent="." unique_id=1023396889 groups=["npcLv3"]]
+position = Vector2(626, -164)
+collision_layer = 2
+script = ExtResource("14_p5cwj")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="npc L3 3" unique_id=667697594]
 position = Vector2(421, 321)
@@ -163,16 +198,21 @@ sprite_frames = SubResource("SpriteFrames_dyvbm")
 animation = &"standing npcs"
 autoplay = "standing npcs"
 
-[node name="npc L3 4" type="CharacterBody2D" parent="." unique_id=518848581]
-position = Vector2(-434, -56)
-script = ExtResource("16_w3p6x")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="npc L3 3" unique_id=185380608]
+position = Vector2(420.5, 321)
+shape = SubResource("RectangleShape2D_dlbmc")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="npc L3 4" unique_id=708997526]
-position = Vector2(529.5, 359)
-shape = SubResource("RectangleShape2D_3v0ly")
+[node name="npc L3 4" type="CharacterBody2D" parent="." unique_id=518848581 groups=["npcLv3"]]
+position = Vector2(-434, -56)
+collision_layer = 2
+script = ExtResource("16_w3p6x")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="npc L3 4" unique_id=302209523]
 position = Vector2(522, 316)
 sprite_frames = SubResource("SpriteFrames_b1nka")
-animation = &"standing npcs "
+animation = &"happy"
 autoplay = "standing npcs "
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="npc L3 4" unique_id=708997526]
+position = Vector2(522.25, 318)
+shape = SubResource("RectangleShape2D_3v0ly")

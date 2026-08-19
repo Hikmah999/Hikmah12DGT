@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://4pyoplhu8a8b"]
 
 [ext_resource type="FontFile" uid="uid://kakemuqg7gk7" path="res://I-pixel-u.ttf" id="1_ktig4"]
-[ext_resource type="Script" uid="uid://uusxfhw2epny" path="res://button.gd" id="1_olt8n"]
+[ext_resource type="Script" uid="uid://uusxfhw2epny" path="res://menu/button.gd" id="1_olt8n"]
 
 [node name="home screen" type="Control" unique_id=718670738]
 layout_mode = 3

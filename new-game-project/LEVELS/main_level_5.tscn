@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://kf65onfvqn1v"]
+
+[ext_resource type="PackedScene" uid="uid://dgnrtw6ncau0n" path="res://Npcs/npc_level_5.tscn" id="1_cdlmi"]
+
+[node name="main_level_5" type="Node2D" unique_id=1379365423]
+
+[node name="npclevel5" parent="." unique_id=1578429773 instance=ExtResource("1_cdlmi")]
