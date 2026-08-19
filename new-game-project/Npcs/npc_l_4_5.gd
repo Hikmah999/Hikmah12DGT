@@ -8,3 +8,5 @@ func  make_happy() -> void:
 	
 	is_happy = true
 	$AnimatedSprite2D.play("happy")
+
+	get_tree().current_scene.npc_became_happy()

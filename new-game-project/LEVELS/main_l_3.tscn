@@ -1,7 +1,10 @@
 [gd_scene format=3 uid="uid://ccqdc7x2oum5c"]
 
+[ext_resource type="Script" uid="uid://chnos6u1n67s2" path="res://LEVELS/main_l_3.gd" id="1_38x88"]
 [ext_resource type="PackedScene" uid="uid://hujc0gnhqeja" path="res://Npcs/npcs_level_3.tscn" id="2_hcg63"]
 [ext_resource type="PackedScene" uid="uid://fagonxjqtnyr" path="res://LEVELS/player_1.tscn" id="2_xdrmw"]
+[ext_resource type="FontFile" uid="uid://kakemuqg7gk7" path="res://I-pixel-u.ttf" id="3_mlky3"]
+[ext_resource type="Script" uid="uid://cop44fp8cvu8f" path="res://LEVELS/level_3.gd" id="4_38x88"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ktig4"]
 size = Vector2(287.5, 62.5)
@@ -36,6 +39,7 @@ distance = -1144.4857
 normal = Vector2(0, 1)
 
 [node name="main l3" type="Node2D" unique_id=1592028448]
+script = ExtResource("1_38x88")
 
 [node name="npcslevel3" parent="." unique_id=2134047930 instance=ExtResource("2_hcg63")]
 position = Vector2(-1, -1)
@@ -89,3 +93,13 @@ shape = SubResource("WorldBoundaryShape2D_s3k8i")
 
 [node name="Player1" parent="." unique_id=696723897 instance=ExtResource("2_xdrmw")]
 position = Vector2(312, 511)
+
+[node name="level 3" type="Label" parent="." unique_id=689624780]
+offset_left = 330.0
+offset_top = -4.0
+offset_right = 830.0
+offset_bottom = 121.0
+theme_override_fonts/font = ExtResource("3_mlky3")
+theme_override_font_sizes/font_size = 100
+text = "LEVEL 3"
+script = ExtResource("4_38x88")

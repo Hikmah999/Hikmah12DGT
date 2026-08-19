@@ -5,6 +5,8 @@
 [ext_resource type="PackedScene" uid="uid://bo4ecolaorstk" path="res://LEVELS/player_2.tscn" id="3_sc7ya"]
 [ext_resource type="PackedScene" uid="uid://im7kojlqjli7" path="res://Npcs/npcs level1.tscn" id="4_if30c"]
 [ext_resource type="Script" uid="uid://bnwo3uos5smff" path="res://LEVELS/ladder_1.gd" id="5_gsqtd"]
+[ext_resource type="FontFile" uid="uid://kakemuqg7gk7" path="res://I-pixel-u.ttf" id="6_ldjrm"]
+[ext_resource type="Script" uid="uid://c4ln0p4y0miik" path="res://LEVELS/label.gd" id="7_n0p8i"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_lg6m7"]
 distance = -129.0
@@ -114,6 +116,16 @@ shape = SubResource("RectangleShape2D_n0p8i")
 position = Vector2(318.26025, -20.110504)
 scale = Vector2(0.9999997, 0.9999997)
 shape = SubResource("RectangleShape2D_yiuh7")
+
+[node name="Label" type="Label" parent="." unique_id=1193411499]
+offset_left = 315.0
+offset_top = 6.0
+offset_right = 790.0
+offset_bottom = 131.0
+theme_override_fonts/font = ExtResource("6_ldjrm")
+theme_override_font_sizes/font_size = 100
+text = "LEVEL 1"
+script = ExtResource("7_n0p8i")
 
 [connection signal="body_entered" from="ladder1" to="ladder1" method="_on_body_entered"]
 [connection signal="body_exited" from="ladder1" to="ladder1" method="_on_body_exited"]

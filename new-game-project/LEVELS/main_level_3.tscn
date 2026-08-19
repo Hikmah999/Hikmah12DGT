@@ -1,7 +1,10 @@
 [gd_scene format=3 uid="uid://dmlsdu10io0ty"]
 
+[ext_resource type="Script" uid="uid://bn70j0gf213se" path="res://LEVELS/main_level_3.gd" id="1_h3rgl"]
 [ext_resource type="PackedScene" uid="uid://hujc0gnhqeja" path="res://Npcs/npcs_level_3.tscn" id="1_h63em"]
 [ext_resource type="PackedScene" uid="uid://bo4ecolaorstk" path="res://LEVELS/player_2.tscn" id="2_4fhmh"]
+[ext_resource type="FontFile" uid="uid://kakemuqg7gk7" path="res://I-pixel-u.ttf" id="3_e7cdi"]
+[ext_resource type="Script" uid="uid://cop44fp8cvu8f" path="res://LEVELS/level_3.gd" id="4_h3rgl"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4fhmh"]
 size = Vector2(287.5, 62.5)
@@ -16,7 +19,7 @@ size = Vector2(74.5, 111.5)
 size = Vector2(66, 58)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0i3b8"]
-size = Vector2(60, 56.5)
+size = Vector2(52, 56.5)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_a7t48"]
 size = Vector2(71.5, 60)
@@ -36,6 +39,7 @@ distance = -1144.4857
 normal = Vector2(0, 1)
 
 [node name="main_level_3" type="Node2D" unique_id=2090028774]
+script = ExtResource("1_h3rgl")
 
 [node name="npcslevel3" parent="." unique_id=2134047930 instance=ExtResource("1_h63em")]
 position = Vector2(-1, 1)
@@ -63,7 +67,7 @@ position = Vector2(454.125, 414.75)
 shape = SubResource("RectangleShape2D_0i3b8")
 
 [node name="CollisionShape2D6" type="CollisionShape2D" parent="the blocks" unique_id=116066044]
-position = Vector2(789, 372)
+position = Vector2(793, 372)
 shape = SubResource("RectangleShape2D_0i3b8")
 
 [node name="CollisionShape2D7" type="CollisionShape2D" parent="the blocks" unique_id=683670101]
@@ -89,3 +93,13 @@ shape = SubResource("WorldBoundaryShape2D_swkbq")
 
 [node name="player_2" parent="." unique_id=319582610 instance=ExtResource("2_4fhmh")]
 position = Vector2(304, 474)
+
+[node name="level 3" type="Label" parent="." unique_id=335612184]
+offset_left = 345.0
+offset_top = -3.0
+offset_right = 845.0
+offset_bottom = 122.0
+theme_override_fonts/font = ExtResource("3_e7cdi")
+theme_override_font_sizes/font_size = 100
+text = "LEVEL 3"
+script = ExtResource("4_h3rgl")

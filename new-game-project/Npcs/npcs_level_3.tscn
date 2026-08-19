@@ -25,6 +25,15 @@
 [ext_resource type="Texture2D" uid="uid://c6saefv82h310" path="res://character level 3/PumpkinDuse IDLE-3.png.png" id="19_r2qgb"]
 [ext_resource type="Texture2D" uid="uid://jjl12ejehvab" path="res://character level 3/PumpkinDuse IDLE-4.png.png" id="20_ce5rq"]
 [ext_resource type="Texture2D" uid="uid://notxrjwy5n66" path="res://npcs turn happy/Happy PumpkinDuse-1.png.png" id="21_urpif"]
+[ext_resource type="Texture2D" uid="uid://dmvhs4jv4ii7h" path="res://main villian LV3/1x4 IDLE-1.png.png" id="26_af10a"]
+[ext_resource type="Texture2D" uid="uid://ctht78y7jqesx" path="res://main villian LV3/1x4 IDLE-2.png.png" id="27_w3p6x"]
+[ext_resource type="Texture2D" uid="uid://bbyfachsx3i3f" path="res://main villian LV3/1x4 IDLE-3.png.png" id="28_20d4d"]
+[ext_resource type="Texture2D" uid="uid://cpeww1oictxme" path="res://main villian LV3/1x4 IDLE-4.png.png" id="29_jghys"]
+[ext_resource type="Texture2D" uid="uid://bpo7sgnap6sd4" path="res://main villian LV3/1x4 walking animation-1.png.png" id="30_r2qgb"]
+[ext_resource type="Texture2D" uid="uid://dj7u4owk65cub" path="res://main villian LV3/1x4 walking animation-2.png.png" id="31_ce5rq"]
+[ext_resource type="Texture2D" uid="uid://c6vpmsmxmjru" path="res://main villian LV3/1x4 walking animation-3.png.png" id="32_dba32"]
+[ext_resource type="Texture2D" uid="uid://cflxm21o8bp62" path="res://main villian LV3/1x4 walking animation-4.png.png" id="33_8738s"]
+[ext_resource type="Script" uid="uid://dftpmep64yofq" path="res://Npcs/collision_shape_2d.gd" id="34_me5wd"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_fdxdt"]
 animations = [{
@@ -32,7 +41,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("3_lo0lo")
 }],
-"loop": true,
+"loop": 1,
 "name": &"happy",
 "speed": 5.0
 }, {
@@ -49,7 +58,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("5_hkbw4")
 }],
-"loop": true,
+"loop": 1,
 "name": &"standing npcs",
 "speed": 5.0
 }]
@@ -63,7 +72,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("9_x74ad")
 }],
-"loop": true,
+"loop": 1,
 "name": &"happy",
 "speed": 5.0
 }, {
@@ -80,7 +89,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("10_urpif")
 }],
-"loop": true,
+"loop": 1,
 "name": &"standing npcs",
 "speed": 5.0
 }]
@@ -94,7 +103,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("15_7mm61")
 }],
-"loop": true,
+"loop": 1,
 "name": &"happy",
 "speed": 5.0
 }, {
@@ -111,7 +120,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("15_af10a")
 }],
-"loop": true,
+"loop": 1,
 "name": &"standing npcs",
 "speed": 5.0
 }]
@@ -125,7 +134,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("21_urpif")
 }],
-"loop": true,
+"loop": 1,
 "name": &"happy",
 "speed": 5.0
 }, {
@@ -142,13 +151,58 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("20_ce5rq")
 }],
-"loop": true,
+"loop": 1,
 "name": &"standing npcs ",
 "speed": 5.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3v0ly"]
 size = Vector2(21.5, 81)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_6uap5"]
+animations = [{
+"frames": [],
+"loop": 1,
+"name": &"happy",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("26_af10a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_w3p6x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_20d4d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_jghys")
+}],
+"loop": 1,
+"name": &"standing npc",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("30_r2qgb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_ce5rq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_dba32")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_8738s")
+}],
+"loop": 1,
+"name": &"walking",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a7t48"]
+size = Vector2(20, 73)
 
 [node name="npcslevel3" type="Node2D" unique_id=2134047930 groups=["npcLv3"]]
 
@@ -216,3 +270,16 @@ autoplay = "standing npcs "
 [node name="CollisionShape2D" type="CollisionShape2D" parent="npc L3 4" unique_id=708997526]
 position = Vector2(522.25, 318)
 shape = SubResource("RectangleShape2D_3v0ly")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1434934819]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=433194783]
+position = Vector2(879, 542)
+sprite_frames = SubResource("SpriteFrames_6uap5")
+animation = &"standing npc"
+autoplay = "standing npc"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=737383921 groups=["npcLv3"]]
+position = Vector2(880, 538.5)
+shape = SubResource("RectangleShape2D_a7t48")
+script = ExtResource("34_me5wd")

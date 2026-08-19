@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://3ykplbphk4sh"]
 
 [ext_resource type="Texture2D" uid="uid://b5qer8uvhuiuh" path="res://level images/Screenshot 2026-08-14 093235.png" id="1_00xnh"]
+[ext_resource type="Script" uid="uid://ch7sfe4fug4q5" path="res://LEVELS/main_level_2.gd" id="1_2prjh"]
 [ext_resource type="PackedScene" uid="uid://bo4ecolaorstk" path="res://LEVELS/player_2.tscn" id="2_yjffm"]
 [ext_resource type="Script" uid="uid://df65dv62by483" path="res://Npcs/npc_l_2_2.gd" id="3_yx3qo"]
 [ext_resource type="Texture2D" uid="uid://d132ruul5qdiu" path="res://characters/noob IDLE-1.png.png" id="4_bmnxt"]
@@ -21,6 +22,8 @@
 [ext_resource type="Texture2D" uid="uid://booqifos1x1hi" path="res://npcs turn happy/Happy Elliot-1.png.png" id="16_p12xl"]
 [ext_resource type="Texture2D" uid="uid://bhpwh2n41scs4" path="res://characters/Elliot IDLE-4.png.png" id="17_l3tiq"]
 [ext_resource type="Script" uid="uid://bsvidxspipaoa" path="res://LEVELS/ladderl_3.gd" id="18_yjffm"]
+[ext_resource type="FontFile" uid="uid://kakemuqg7gk7" path="res://I-pixel-u.ttf" id="22_p12xl"]
+[ext_resource type="Script" uid="uid://dfsr83qetg1kg" path="res://LEVELS/level_2.gd" id="23_2prjh"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rogwy"]
 size = Vector2(265, 66)
@@ -66,7 +69,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("4_exs6h")
 }],
-"loop": true,
+"loop": 1,
 "name": &"happy",
 "speed": 5.0
 }, {
@@ -83,7 +86,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("7_p12xl")
 }],
-"loop": true,
+"loop": 1,
 "name": &"standing npcs",
 "speed": 5.0
 }]
@@ -97,7 +100,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("10_mn4dp")
 }],
-"loop": true,
+"loop": 1,
 "name": &"happy",
 "speed": 5.0
 }, {
@@ -114,7 +117,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("12_f2lc7")
 }],
-"loop": true,
+"loop": 1,
 "name": &"standing npcs",
 "speed": 5.0
 }]
@@ -128,7 +131,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("16_p12xl")
 }],
-"loop": true,
+"loop": 1,
 "name": &"happy",
 "speed": 5.0
 }, {
@@ -145,7 +148,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("17_l3tiq")
 }],
-"loop": true,
+"loop": 1,
 "name": &"standing npcs",
 "speed": 5.0
 }]
@@ -157,6 +160,7 @@ size = Vector2(23, 83)
 size = Vector2(84, 268)
 
 [node name="main_level_2" type="Node2D" unique_id=1252362397]
+script = ExtResource("1_2prjh")
 
 [node name="Screenshot20260814093235" type="Sprite2D" parent="." unique_id=141059500]
 position = Vector2(579.3757, 324.00003)
@@ -268,6 +272,16 @@ script = ExtResource("18_yjffm")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ladderl3" unique_id=21524742]
 position = Vector2(587, 450)
 shape = SubResource("RectangleShape2D_a7t48")
+
+[node name="level 2" type="Label" parent="." unique_id=441093131]
+offset_left = 315.0
+offset_top = 1.0
+offset_right = 815.0
+offset_bottom = 126.0
+theme_override_fonts/font = ExtResource("22_p12xl")
+theme_override_font_sizes/font_size = 100
+text = "LEVEL 2"
+script = ExtResource("23_2prjh")
 
 [connection signal="body_entered" from="ladderl3" to="ladderl3" method="_on_body_entered"]
 [connection signal="body_exited" from="ladderl3" to="ladderl3" method="_on_body_exited"]

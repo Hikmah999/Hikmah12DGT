@@ -8,11 +8,11 @@ func npc_became_happy() -> void:
 	
 	happy_npcs += 1
 	
-	if happy_npcs >= 2:
+	if happy_npcs >= 3:
 		level_finished = true
 		
 		print("ALL NPCS ARE HAPPY - LEVEL COMPLETE!")
 	
 		await get_tree().create_timer(1.0).timeout
 	
-		get_tree().change_scene_to_file("res://LEVELS/main_level_2.tscn")
+		get_tree().change_scene_to_file("res://LEVELS/main_level_3.tscn")

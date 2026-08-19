@@ -3,6 +3,8 @@
 [ext_resource type="Script" uid="uid://crtdv5djku0ij" path="res://LEVELS/main.gd" id="1_0xm2m"]
 [ext_resource type="PackedScene" uid="uid://fagonxjqtnyr" path="res://LEVELS/player_1.tscn" id="2_j0xpv"]
 [ext_resource type="Texture2D" uid="uid://7ci6mtr2vdsn" path="res://level images/Screenshot 2026-08-14 092300.png" id="2_wxe8c"]
+[ext_resource type="FontFile" uid="uid://kakemuqg7gk7" path="res://I-pixel-u.ttf" id="6_kf54x"]
+[ext_resource type="Script" uid="uid://c4ln0p4y0miik" path="res://LEVELS/label.gd" id="7_bsbpf"]
 [ext_resource type="Script" uid="uid://bdr788eo8gjgq" path="res://LEVELS/ladder.gd" id="8_bsbpf"]
 [ext_resource type="PackedScene" uid="uid://im7kojlqjli7" path="res://Npcs/npcs level1.tscn" id="9_5lt74"]
 
@@ -71,9 +73,6 @@ shape = SubResource("WorldBoundaryShape2D_h2yge")
 [node name="Player1" parent="." unique_id=696723897 instance=ExtResource("2_j0xpv")]
 position = Vector2(318, 537)
 
-[node name="npc" parent="." unique_id=1996645054 instance=ExtResource("9_5lt74")]
-position = Vector2(-77, -103)
-
 [node name="the blocks" type="StaticBody2D" parent="." unique_id=2013054262]
 position = Vector2(579.0265, 327.5)
 scale = Vector2(1.0434083, 1.0434084)
@@ -107,6 +106,19 @@ shape = SubResource("RectangleShape2D_hdn0m")
 position = Vector2(316.10394, -18.41748)
 scale = Vector2(0.9999996, 0.9999996)
 shape = SubResource("RectangleShape2D_a7t48")
+
+[node name="Label" type="Label" parent="." unique_id=496059979]
+offset_left = 315.0
+offset_top = 6.0
+offset_right = 790.0
+offset_bottom = 131.0
+theme_override_fonts/font = ExtResource("6_kf54x")
+theme_override_font_sizes/font_size = 100
+text = "LEVEL 1"
+script = ExtResource("7_bsbpf")
+
+[node name="npc" parent="." unique_id=1996645054 instance=ExtResource("9_5lt74")]
+position = Vector2(-106, -113)
 
 [connection signal="body_entered" from="ladder" to="ladder" method="_on_body_entered"]
 [connection signal="body_exited" from="ladder" to="ladder" method="_on_body_exited"]

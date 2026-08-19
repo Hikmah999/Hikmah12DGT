@@ -1,7 +1,11 @@
 [gd_scene format=3 uid="uid://kf65onfvqn1v"]
 
 [ext_resource type="PackedScene" uid="uid://dgnrtw6ncau0n" path="res://Npcs/npc_level_5.tscn" id="1_cdlmi"]
+[ext_resource type="PackedScene" uid="uid://bo4ecolaorstk" path="res://LEVELS/player_2.tscn" id="2_vbq8n"]
 
 [node name="main_level_5" type="Node2D" unique_id=1379365423]
 
 [node name="npclevel5" parent="." unique_id=1578429773 instance=ExtResource("1_cdlmi")]
+
+[node name="player_2" parent="." unique_id=319582610 instance=ExtResource("2_vbq8n")]
+position = Vector2(425, 374)

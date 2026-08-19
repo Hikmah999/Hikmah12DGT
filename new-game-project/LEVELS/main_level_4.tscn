@@ -1,13 +1,17 @@
 [gd_scene format=3 uid="uid://cgtyg4jwmv4bk"]
 
+[ext_resource type="Script" uid="uid://d1glm65m2xg7x" path="res://LEVELS/main_level_4.gd" id="1_gfuxy"]
 [ext_resource type="PackedScene" uid="uid://xqyatxkppx" path="res://Npcs/npcs_level_4.tscn" id="1_vrrlf"]
 [ext_resource type="PackedScene" uid="uid://bo4ecolaorstk" path="res://LEVELS/player_2.tscn" id="2_xadfl"]
 [ext_resource type="Script" uid="uid://b4kd6nughjvbu" path="res://ladders/ladderl_4.gd" id="3_5sqdc"]
+[ext_resource type="FontFile" uid="uid://kakemuqg7gk7" path="res://I-pixel-u.ttf" id="4_5sqdc"]
+[ext_resource type="Script" uid="uid://cqvmjsurd4a53" path="res://LEVELS/level_4.gd" id="5_gfuxy"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_a7t48"]
 size = Vector2(91, 266)
 
 [node name="main Level 4" type="Node2D" unique_id=19550235]
+script = ExtResource("1_gfuxy")
 
 [node name="npcs_level_4" parent="." unique_id=560533176 instance=ExtResource("1_vrrlf")]
 
@@ -20,6 +24,16 @@ script = ExtResource("3_5sqdc")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ladderl4" unique_id=858946644]
 position = Vector2(655, 346)
 shape = SubResource("RectangleShape2D_a7t48")
+
+[node name="level 4" type="Label" parent="." unique_id=2095934110]
+offset_left = 343.0
+offset_top = -11.0
+offset_right = 843.0
+offset_bottom = 114.0
+theme_override_fonts/font = ExtResource("4_5sqdc")
+theme_override_font_sizes/font_size = 100
+text = "LEVEL 4"
+script = ExtResource("5_gfuxy")
 
 [connection signal="body_entered" from="ladderl4" to="ladderl4" method="_on_body_entered"]
 [connection signal="body_exited" from="ladderl4" to="ladderl4" method="_on_body_exited"]
