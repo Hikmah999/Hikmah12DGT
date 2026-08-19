@@ -2,23 +2,27 @@
 
 [ext_resource type="Texture2D" uid="uid://ttskyda8c7xt" path="res://level images/Screenshot 2026-08-14 094357.png" id="1_83wcm"]
 [ext_resource type="Texture2D" uid="uid://booqifos1x1hi" path="res://npcs turn happy/Happy Elliot-1.png.png" id="2_i7kwc"]
+[ext_resource type="Script" uid="uid://df875qwimye0o" path="res://Npcs/1.gd" id="2_vawkn"]
 [ext_resource type="Texture2D" uid="uid://c7t7h0ulfjk0q" path="res://characters/Elliot IDLE-1.png.png" id="3_od7e0"]
 [ext_resource type="Texture2D" uid="uid://bmmo31pkqy6am" path="res://characters/Elliot IDLE-2.png.png" id="4_8b6ou"]
 [ext_resource type="Texture2D" uid="uid://da5udhdjnm0ka" path="res://characters/Elliot IDLE-3.png.png" id="5_fccdw"]
 [ext_resource type="Texture2D" uid="uid://bhpwh2n41scs4" path="res://characters/Elliot IDLE-4.png.png" id="6_hxgse"]
 [ext_resource type="Texture2D" uid="uid://do4yhywunkxiv" path="res://npcs turn happy/Happy guest-1.png.png" id="7_dfh0b"]
 [ext_resource type="Texture2D" uid="uid://1lqwg543725j" path="res://character level 3/guest IDLE-1.png.png" id="8_kogax"]
+[ext_resource type="Script" uid="uid://0am2ci7t8kn4" path="res://Npcs/2.gd" id="8_qyk5l"]
 [ext_resource type="Texture2D" uid="uid://y0viv1sd4kxu" path="res://character level 3/guest IDLE-2.png.png" id="9_7tscj"]
 [ext_resource type="Texture2D" uid="uid://flf4e6frvsvh" path="res://character level 3/guest IDLE-3.png.png" id="10_rmy53"]
 [ext_resource type="Texture2D" uid="uid://dbdfxfdilp2xr" path="res://character level 3/guest IDLE-4.png.png" id="11_m1w1i"]
 [ext_resource type="Texture2D" uid="uid://dvwdhlugkior1" path="res://npcs turn happy/Happy Chance-1.png.png" id="12_l7agd"]
 [ext_resource type="Texture2D" uid="uid://dsqu0i56h5fhl" path="res://character level 3/Chance IDLE-1.png.png" id="13_rxs8h"]
+[ext_resource type="Script" uid="uid://dq4avwpgtld1b" path="res://Npcs/3.gd" id="14_v53ig"]
 [ext_resource type="Texture2D" uid="uid://cp5s5krqjiev1" path="res://character level 3/Chance IDLE-2.png.png" id="14_wiaj2"]
 [ext_resource type="Texture2D" uid="uid://d1cyj5w8h514" path="res://character level 3/Chance IDLE-3.png.png" id="15_rw08v"]
 [ext_resource type="Texture2D" uid="uid://cy5k7ewnfdgyg" path="res://character level 3/Chance IDLE-4.png.png" id="16_o63t8"]
 [ext_resource type="Texture2D" uid="uid://notxrjwy5n66" path="res://npcs turn happy/Happy PumpkinDuse-1.png.png" id="17_vawkn"]
 [ext_resource type="Texture2D" uid="uid://dtn5usrfwcxcm" path="res://character level 3/PumpkinDuse IDLE-1.png.png" id="18_qyk5l"]
 [ext_resource type="Texture2D" uid="uid://dwm6wf6eew13h" path="res://character level 3/PumpkinDuse IDLE-2.png.png" id="19_v53ig"]
+[ext_resource type="Script" uid="uid://bfbw2pwn5gugh" path="res://Npcs/4.gd" id="20_h2tpw"]
 [ext_resource type="Texture2D" uid="uid://c6saefv82h310" path="res://character level 3/PumpkinDuse IDLE-3.png.png" id="20_o0xdf"]
 [ext_resource type="Texture2D" uid="uid://jjl12ejehvab" path="res://character level 3/PumpkinDuse IDLE-4.png.png" id="21_h2tpw"]
 [ext_resource type="Texture2D" uid="uid://c23ari40hbnwi" path="res://npcs turn happy/Happy 007e7-1.png.png" id="22_fx6yj"]
@@ -26,35 +30,41 @@
 [ext_resource type="Texture2D" uid="uid://c4srytfuuadwv" path="res://characters/007e7 idle-2.png.png" id="24_csowa"]
 [ext_resource type="Texture2D" uid="uid://cwfuhv8corac4" path="res://characters/007e7 idle-3.png.png" id="25_2ym3k"]
 [ext_resource type="Texture2D" uid="uid://bul0b0wbiq8fh" path="res://characters/007e7 idle-4.png.png" id="26_7dd7u"]
+[ext_resource type="Script" uid="uid://cdc7q8xbail0m" path="res://Npcs/5.gd" id="26_fx6yj"]
 [ext_resource type="Texture2D" uid="uid://c4qmoxbhxtk4a" path="res://npcs turn happy/Happy Noob-1.png.png" id="27_dvp8g"]
 [ext_resource type="Texture2D" uid="uid://d132ruul5qdiu" path="res://characters/noob IDLE-1.png.png" id="28_fuclt"]
 [ext_resource type="Texture2D" uid="uid://x3ht5ja8o4gr" path="res://characters/noob IDLE-2.png.png" id="29_qxi7r"]
 [ext_resource type="Texture2D" uid="uid://b4lbu6jn8quyo" path="res://characters/noob IDLE-3.png.png" id="30_g88w4"]
 [ext_resource type="Texture2D" uid="uid://did5e7iddy0u4" path="res://characters/noob IDLE-4.png.png" id="31_qppx6"]
+[ext_resource type="Script" uid="uid://b2xdql3u66vl7" path="res://Npcs/6.gd" id="32_shgfa"]
 [ext_resource type="Texture2D" uid="uid://c1vyx1wct7wv4" path="res://npcs turn happy/Happy Taph-1.png.png" id="32_xbcw6"]
 [ext_resource type="Texture2D" uid="uid://be6oqr8byece8" path="res://characters/Taph IDLE-1.png.png" id="33_i51qi"]
 [ext_resource type="Texture2D" uid="uid://dqfh8nqvcqhv6" path="res://characters/Taph IDLE-2.png.png" id="34_238hg"]
 [ext_resource type="Texture2D" uid="uid://bbrebkb3nw762" path="res://characters/Taph IDLE-3.png.png" id="35_27hty"]
 [ext_resource type="Texture2D" uid="uid://dl4km0yjrn3yx" path="res://characters/Taph IDLE-4.png.png" id="36_2kwat"]
 [ext_resource type="Texture2D" uid="uid://dko376utihvsa" path="res://npcs turn happy/Happy Two time-1.png (1).png" id="37_cp7rc"]
+[ext_resource type="Script" uid="uid://blf2d3hdspvof" path="res://Npcs/7.gd" id="38_csowa"]
 [ext_resource type="Texture2D" uid="uid://2ykdwyoou4wy" path="res://characters/two time IDLE-1.png.png" id="38_tom2x"]
 [ext_resource type="Texture2D" uid="uid://cf818oiwxr1wg" path="res://characters/two time IDLE-2.png.png" id="39_78v35"]
 [ext_resource type="Texture2D" uid="uid://dn2r4j0m0n2jk" path="res://characters/two time IDLE-3.png.png" id="40_k878x"]
 [ext_resource type="Texture2D" uid="uid://dxnbhicsbivh1" path="res://characters/two time IDLE-4.png.png" id="41_dvpt1"]
 [ext_resource type="Texture2D" uid="uid://dkdt6m3f4245r" path="res://npcs turn happy/Happy Blox-Bot-1.png.png" id="42_i63ls"]
 [ext_resource type="Texture2D" uid="uid://dqdjve60hrtx7" path="res://character level 3/Blox-Bot IDLE-1.png.png" id="43_7417f"]
+[ext_resource type="Script" uid="uid://c3jm3eb6tachp" path="res://Npcs/8.gd" id="44_2ym3k"]
 [ext_resource type="Texture2D" uid="uid://d3omjwc0r6j5j" path="res://character level 3/Blox-Bot IDLE-2.png.png" id="44_e4cua"]
 [ext_resource type="Texture2D" uid="uid://dpcjv1hktdfas" path="res://character level 3/Blox-Bot IDLE-3.png.png" id="45_v8kpq"]
 [ext_resource type="Texture2D" uid="uid://p7i0a2lkbcx0" path="res://character level 3/Blox-Bot IDLE-4.png.png" id="46_v4iye"]
 [ext_resource type="Texture2D" uid="uid://clyta5qahc1nd" path="res://main villian LV5/Ck1d good IDLE-1.png.png" id="47_l1tro"]
 [ext_resource type="Texture2D" uid="uid://c4v32aym4lbyc" path="res://main villian LV5/Ck1d good IDLE-2.png.png" id="48_5bhxs"]
 [ext_resource type="Texture2D" uid="uid://dyjtn5o30fa36" path="res://main villian LV5/Ck1d good IDLE-3.png.png" id="49_qnc5j"]
+[ext_resource type="Script" uid="uid://dxmhxpofpaus4" path="res://Npcs/9.gd" id="50_7dd7u"]
 [ext_resource type="Texture2D" uid="uid://dext7fhlqe2am" path="res://main villian LV5/Ck1d good IDLE-4.png.png" id="50_l7acm"]
 [ext_resource type="Texture2D" uid="uid://bg481rj8ou0wm" path="res://main villian LV5/Ck1d IDLE-1.png.png" id="51_sko50"]
 [ext_resource type="Texture2D" uid="uid://dua5khng8gfxu" path="res://main villian LV5/Ck1d IDLE-2.png.png" id="52_c7lht"]
 [ext_resource type="Texture2D" uid="uid://dwasmndc4brt0" path="res://main villian LV5/Ck1d IDLE-3.png.png" id="53_ojrhw"]
 [ext_resource type="Texture2D" uid="uid://dvlpny7o6xbhu" path="res://main villian LV5/Ck1d IDLE-4.png.png" id="54_5128h"]
 [ext_resource type="Texture2D" uid="uid://bjp63f5fx1u2y" path="res://main villian LV5/Ck1d walking animation-1.png.png" id="55_sff3y"]
+[ext_resource type="Script" uid="uid://boxfx1158c2ed" path="res://Npcs/10.gd" id="56_dvp8g"]
 [ext_resource type="Texture2D" uid="uid://cqthesthwn0th" path="res://main villian LV5/Ck1d walking animation-2.png.png" id="56_g1efa"]
 [ext_resource type="Texture2D" uid="uid://di8bjjvnsnydw" path="res://main villian LV5/Ck1d walking animation-3.png.png" id="57_pup00"]
 [ext_resource type="Texture2D" uid="uid://c2lbmpir1f31w" path="res://main villian LV5/Ck1d walking animation-4.png.png" id="58_ryxfj"]
@@ -65,7 +75,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("2_i7kwc")
 }],
-"loop": 1,
+"loop": true,
 "name": &"happy",
 "speed": 5.0
 }, {
@@ -82,7 +92,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("6_hxgse")
 }],
-"loop": 1,
+"loop": true,
 "name": &"standing npc",
 "speed": 5.0
 }]
@@ -96,7 +106,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("7_dfh0b")
 }],
-"loop": 1,
+"loop": true,
 "name": &"happy",
 "speed": 5.0
 }, {
@@ -113,7 +123,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("11_m1w1i")
 }],
-"loop": 1,
+"loop": true,
 "name": &"standing npc",
 "speed": 5.0
 }]
@@ -127,7 +137,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("12_l7agd")
 }],
-"loop": 1,
+"loop": true,
 "name": &"happy",
 "speed": 5.0
 }, {
@@ -144,7 +154,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("16_o63t8")
 }],
-"loop": 1,
+"loop": true,
 "name": &"standing npc",
 "speed": 5.0
 }]
@@ -158,7 +168,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("17_vawkn")
 }],
-"loop": 1,
+"loop": true,
 "name": &"happy",
 "speed": 5.0
 }, {
@@ -175,7 +185,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("21_h2tpw")
 }],
-"loop": 1,
+"loop": true,
 "name": &"standing npc",
 "speed": 5.0
 }]
@@ -189,7 +199,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("22_fx6yj")
 }],
-"loop": 1,
+"loop": true,
 "name": &"happy",
 "speed": 5.0
 }, {
@@ -206,7 +216,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("26_7dd7u")
 }],
-"loop": 1,
+"loop": true,
 "name": &"standing npc",
 "speed": 5.0
 }]
@@ -220,7 +230,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("27_dvp8g")
 }],
-"loop": 1,
+"loop": true,
 "name": &"happy",
 "speed": 5.0
 }, {
@@ -237,7 +247,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("31_qppx6")
 }],
-"loop": 1,
+"loop": true,
 "name": &"standing npc",
 "speed": 5.0
 }]
@@ -251,7 +261,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("32_xbcw6")
 }],
-"loop": 1,
+"loop": true,
 "name": &"happy",
 "speed": 5.0
 }, {
@@ -268,7 +278,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("36_2kwat")
 }],
-"loop": 1,
+"loop": true,
 "name": &"standing npc",
 "speed": 5.0
 }]
@@ -282,7 +292,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("37_cp7rc")
 }],
-"loop": 1,
+"loop": true,
 "name": &"happy",
 "speed": 5.0
 }, {
@@ -299,7 +309,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("41_dvpt1")
 }],
-"loop": 1,
+"loop": true,
 "name": &"standing npc",
 "speed": 5.0
 }]
@@ -313,7 +323,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("42_i63ls")
 }],
-"loop": 1,
+"loop": true,
 "name": &"happy",
 "speed": 5.0
 }, {
@@ -330,7 +340,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("46_v4iye")
 }],
-"loop": 1,
+"loop": true,
 "name": &"standing npc",
 "speed": 5.0
 }]
@@ -353,7 +363,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("50_l7acm")
 }],
-"loop": 1,
+"loop": true,
 "name": &"happy",
 "speed": 5.0
 }, {
@@ -370,7 +380,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("54_5128h")
 }],
-"loop": 1,
+"loop": true,
 "name": &"standing npc",
 "speed": 5.0
 }, {
@@ -387,13 +397,46 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("58_ryxfj")
 }],
-"loop": 1,
+"loop": true,
 "name": &"walk",
 "speed": 5.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_a7t48"]
 size = Vector2(23, 70)
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_dfh0b"]
+distance = -597.0
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_kogax"]
+normal = Vector2(1, 0)
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_7tscj"]
+normal = Vector2(0, 1)
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_rmy53"]
+normal = Vector2(-1, 0)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_m1w1i"]
+size = Vector2(144, 59)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l7agd"]
+size = Vector2(312.5, 64)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rxs8h"]
+size = Vector2(127, 64)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wiaj2"]
+size = Vector2(135.5, 55.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rw08v"]
+size = Vector2(130.5, 53)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_o63t8"]
+size = Vector2(134.5, 55)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vawkn"]
+size = Vector2(401.5, 45.5)
 
 [node name="npclevel5" type="Node2D" unique_id=1578429773]
 
@@ -403,6 +446,7 @@ scale = Vector2(0.95588243, 0.9558824)
 texture = ExtResource("1_83wcm")
 
 [node name="1" type="CharacterBody2D" parent="." unique_id=159596873]
+script = ExtResource("2_vawkn")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="1" unique_id=131849688]
 position = Vector2(40, 103)
@@ -415,18 +459,21 @@ position = Vector2(41, 100.75)
 shape = SubResource("RectangleShape2D_yj75e")
 
 [node name="2" type="CharacterBody2D" parent="." unique_id=2100546804]
+script = ExtResource("8_qyk5l")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="2" unique_id=330960497]
-position = Vector2(187, 282)
+position = Vector2(187, 273)
 sprite_frames = SubResource("SpriteFrames_a7t48")
 animation = &"happy"
 autoplay = "standing npc"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="2" unique_id=1192968605]
-position = Vector2(185.5, 278.5)
+position = Vector2(185.5, 269.5)
 shape = SubResource("RectangleShape2D_pg2de")
 
 [node name="3" type="CharacterBody2D" parent="." unique_id=1143756284]
+position = Vector2(0, -9)
+script = ExtResource("14_v53ig")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="3" unique_id=492173025]
 position = Vector2(261, 280)
@@ -439,6 +486,7 @@ position = Vector2(260, 283.5)
 shape = SubResource("RectangleShape2D_yiuh7")
 
 [node name="4" type="CharacterBody2D" parent="." unique_id=2057611718]
+script = ExtResource("20_h2tpw")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="4" unique_id=1273552664]
 position = Vector2(57, 553)
@@ -451,6 +499,7 @@ position = Vector2(56.5, 555)
 shape = SubResource("RectangleShape2D_6uap5")
 
 [node name="5" type="CharacterBody2D" parent="." unique_id=1139415677]
+script = ExtResource("26_fx6yj")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="5" unique_id=402692376]
 position = Vector2(211, 558)
@@ -463,6 +512,7 @@ position = Vector2(211, 559.75)
 shape = SubResource("RectangleShape2D_bybg4")
 
 [node name="6" type="CharacterBody2D" parent="." unique_id=1800805378]
+script = ExtResource("32_shgfa")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="6" unique_id=1338335246]
 position = Vector2(1104, 162)
@@ -475,6 +525,7 @@ position = Vector2(1105, 164)
 shape = SubResource("RectangleShape2D_c7266")
 
 [node name="7" type="CharacterBody2D" parent="." unique_id=1727449146]
+script = ExtResource("38_csowa")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="7" unique_id=795147549]
 position = Vector2(945, 222)
@@ -487,6 +538,7 @@ position = Vector2(944.5, 221.875)
 shape = SubResource("RectangleShape2D_jb7op")
 
 [node name="8" type="CharacterBody2D" parent="." unique_id=2066089574]
+script = ExtResource("44_2ym3k")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="8" unique_id=1548165743]
 position = Vector2(1108, 558)
@@ -499,6 +551,7 @@ position = Vector2(1109, 559)
 shape = SubResource("RectangleShape2D_8vqng")
 
 [node name="9" type="CharacterBody2D" parent="." unique_id=1433029611]
+script = ExtResource("50_7dd7u")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="9" unique_id=1396866673]
 position = Vector2(983, 559)
@@ -511,6 +564,7 @@ position = Vector2(984, 558)
 shape = SubResource("RectangleShape2D_1o3qc")
 
 [node name="10" type="CharacterBody2D" parent="." unique_id=656575678]
+script = ExtResource("56_dvp8g")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="10" unique_id=138071534]
 position = Vector2(567, 161)
@@ -521,3 +575,50 @@ autoplay = "standing npc"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="10" unique_id=1720526653]
 position = Vector2(568.5, 163)
 shape = SubResource("RectangleShape2D_a7t48")
+
+[node name="boundires" type="StaticBody2D" parent="." unique_id=45130687]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="boundires" unique_id=1827642348]
+shape = SubResource("WorldBoundaryShape2D_dfh0b")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="boundires" unique_id=1730462191]
+position = Vector2(0, 126)
+shape = SubResource("WorldBoundaryShape2D_kogax")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="boundires" unique_id=13716533]
+position = Vector2(189, 0)
+shape = SubResource("WorldBoundaryShape2D_7tscj")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="boundires" unique_id=1512410982]
+position = Vector2(1151, 59)
+shape = SubResource("WorldBoundaryShape2D_rmy53")
+
+[node name="box panels" type="StaticBody2D" parent="." unique_id=1144912328]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="box panels" unique_id=1084828364]
+position = Vector2(73, 173.5)
+shape = SubResource("RectangleShape2D_m1w1i")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="box panels" unique_id=1214847268]
+position = Vector2(156.75, 346)
+shape = SubResource("RectangleShape2D_l7agd")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="box panels" unique_id=1474834457]
+position = Vector2(1089.5, 231)
+shape = SubResource("RectangleShape2D_rxs8h")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="box panels" unique_id=332084316]
+position = Vector2(962.25, 291.25)
+shape = SubResource("RectangleShape2D_wiaj2")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="box panels" unique_id=601675880]
+position = Vector2(460.75, 230.5)
+shape = SubResource("RectangleShape2D_rw08v")
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="box panels" unique_id=1032737770]
+position = Vector2(688.25, 230)
+shape = SubResource("RectangleShape2D_o63t8")
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="box panels" unique_id=125975773]
+position = Vector2(573.25, 509.25)
+shape = SubResource("RectangleShape2D_vawkn")

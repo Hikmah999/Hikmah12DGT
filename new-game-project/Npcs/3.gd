@@ -10,5 +10,3 @@ func  make_happy() -> void:
 	$AnimatedSprite2D.play("happy")
 	
 	get_tree().current_scene.npc_became_happy()
-
-	

@@ -2,6 +2,12 @@
 
 [ext_resource type="PackedScene" uid="uid://dgnrtw6ncau0n" path="res://Npcs/npc_level_5.tscn" id="1_cdlmi"]
 [ext_resource type="PackedScene" uid="uid://bo4ecolaorstk" path="res://LEVELS/player_2.tscn" id="2_vbq8n"]
+[ext_resource type="FontFile" uid="uid://kakemuqg7gk7" path="res://I-pixel-u.ttf" id="3_ofnks"]
+[ext_resource type="Script" uid="uid://c4ln0p4y0miik" path="res://LEVELS/label.gd" id="4_jjq2l"]
+[ext_resource type="Script" uid="uid://di4sxfua3r2b" path="res://Npcs/ladder_l_5.gd" id="5_jjq2l"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fj6hr"]
+size = Vector2(92.625, 282.5)
 
 [node name="main_level_5" type="Node2D" unique_id=1379365423]
 
@@ -9,3 +15,24 @@
 
 [node name="player_2" parent="." unique_id=319582610 instance=ExtResource("2_vbq8n")]
 position = Vector2(425, 374)
+
+[node name="Label" type="Label" parent="." unique_id=1229620989]
+offset_left = 347.0
+offset_top = -18.0
+offset_right = 847.0
+offset_bottom = 107.0
+theme_override_colors/font_color = Color(0.93333334, 0.07058824, 0.07058824, 1)
+theme_override_fonts/font = ExtResource("3_ofnks")
+theme_override_font_sizes/font_size = 100
+text = "LEVEL 5"
+script = ExtResource("4_jjq2l")
+
+[node name="ladder l5" type="Area2D" parent="." unique_id=271624920]
+script = ExtResource("5_jjq2l")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ladder l5" unique_id=1068937223]
+position = Vector2(572.6875, 344.75)
+shape = SubResource("RectangleShape2D_fj6hr")
+
+[connection signal="body_entered" from="ladder l5" to="ladder l5" method="_on_body_entered"]
+[connection signal="body_exited" from="ladder l5" to="ladder l5" method="_on_body_exited"]
