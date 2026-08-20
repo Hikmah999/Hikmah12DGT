@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://baligqx4o3obb"]
 
+[ext_resource type="Script" uid="uid://dyu2tdg7wgg3b" path="res://LEVELS/main_l_5.gd" id="1_hyfeq"]
 [ext_resource type="PackedScene" uid="uid://dgnrtw6ncau0n" path="res://Npcs/npc_level_5.tscn" id="1_xjp7u"]
 [ext_resource type="FontFile" uid="uid://kakemuqg7gk7" path="res://I-pixel-u.ttf" id="2_q8ikg"]
 [ext_resource type="Script" uid="uid://c4ln0p4y0miik" path="res://LEVELS/label.gd" id="3_hyfeq"]
@@ -10,6 +11,7 @@
 size = Vector2(90.5, 281.5)
 
 [node name="main_l_5" type="Node2D" unique_id=89760089]
+script = ExtResource("1_hyfeq")
 
 [node name="npclevel5" parent="." unique_id=1578429773 instance=ExtResource("1_xjp7u")]
 

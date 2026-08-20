@@ -12,9 +12,6 @@
 [ext_resource type="Texture2D" uid="uid://31lfodqk3hbu" path="res://characters/shed-chicken WALK-5.png.png" id="10_ayiqd"]
 [ext_resource type="Texture2D" uid="uid://b7veqmvo5chjy" path="res://characters/shed-chicken WALK-6.png.png" id="11_vl7il"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_6imt3"]
-size = Vector2(40, 82)
-
 [sub_resource type="SpriteFrames" id="SpriteFrames_y762y"]
 animations = [{
 "frames": [{
@@ -30,7 +27,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("5_7d0q2")
 }],
-"loop": 1,
+"loop": true,
 "name": &"standing",
 "speed": 5.0
 }, {
@@ -53,17 +50,16 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("11_vl7il")
 }],
-"loop": 1,
+"loop": true,
 "name": &"walk",
 "speed": 5.0
 }]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6imt3"]
+size = Vector2(40, 82)
+
 [node name="player_2" type="CharacterBody2D" unique_id=319582610]
 script = ExtResource("1_up5o4")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=127662423]
-position = Vector2(25, 41)
-shape = SubResource("RectangleShape2D_6imt3")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=183333920]
 position = Vector2(25, 41)
@@ -72,3 +68,7 @@ animation = &"standing"
 autoplay = "standing"
 
 [node name="ThrowPoint" type="Marker2D" parent="." unique_id=862780730]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=127662423]
+position = Vector2(25, 41)
+shape = SubResource("RectangleShape2D_6imt3")

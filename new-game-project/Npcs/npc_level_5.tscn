@@ -75,7 +75,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("2_i7kwc")
 }],
-"loop": 1,
+"loop": true,
 "name": &"happy",
 "speed": 5.0
 }, {
@@ -92,7 +92,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("6_hxgse")
 }],
-"loop": 1,
+"loop": true,
 "name": &"standing npc",
 "speed": 5.0
 }]
@@ -106,7 +106,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("7_dfh0b")
 }],
-"loop": 1,
+"loop": true,
 "name": &"happy",
 "speed": 5.0
 }, {
@@ -123,7 +123,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("11_m1w1i")
 }],
-"loop": 1,
+"loop": true,
 "name": &"standing npc",
 "speed": 5.0
 }]
@@ -137,7 +137,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("12_l7agd")
 }],
-"loop": 1,
+"loop": true,
 "name": &"happy",
 "speed": 5.0
 }, {
@@ -154,7 +154,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("16_o63t8")
 }],
-"loop": 1,
+"loop": true,
 "name": &"standing npc",
 "speed": 5.0
 }]
@@ -168,7 +168,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("17_vawkn")
 }],
-"loop": 1,
+"loop": true,
 "name": &"happy",
 "speed": 5.0
 }, {
@@ -185,7 +185,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("21_h2tpw")
 }],
-"loop": 1,
+"loop": true,
 "name": &"standing npc",
 "speed": 5.0
 }]
@@ -199,7 +199,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("22_fx6yj")
 }],
-"loop": 1,
+"loop": true,
 "name": &"happy",
 "speed": 5.0
 }, {
@@ -216,7 +216,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("26_7dd7u")
 }],
-"loop": 1,
+"loop": true,
 "name": &"standing npc",
 "speed": 5.0
 }]
@@ -230,7 +230,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("27_dvp8g")
 }],
-"loop": 1,
+"loop": true,
 "name": &"happy",
 "speed": 5.0
 }, {
@@ -247,7 +247,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("31_qppx6")
 }],
-"loop": 1,
+"loop": true,
 "name": &"standing npc",
 "speed": 5.0
 }]
@@ -261,7 +261,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("32_xbcw6")
 }],
-"loop": 1,
+"loop": true,
 "name": &"happy",
 "speed": 5.0
 }, {
@@ -278,7 +278,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("36_2kwat")
 }],
-"loop": 1,
+"loop": true,
 "name": &"standing npc",
 "speed": 5.0
 }]
@@ -292,7 +292,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("37_cp7rc")
 }],
-"loop": 1,
+"loop": true,
 "name": &"happy",
 "speed": 5.0
 }, {
@@ -309,7 +309,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("41_dvpt1")
 }],
-"loop": 1,
+"loop": true,
 "name": &"standing npc",
 "speed": 5.0
 }]
@@ -323,7 +323,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("42_i63ls")
 }],
-"loop": 1,
+"loop": true,
 "name": &"happy",
 "speed": 5.0
 }, {
@@ -340,13 +340,16 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("46_v4iye")
 }],
-"loop": 1,
+"loop": true,
 "name": &"standing npc",
 "speed": 5.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1o3qc"]
 size = Vector2(24, 80)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qyk5l"]
+size = Vector2(26.5, 74)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_2t31x"]
 animations = [{
@@ -363,7 +366,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("50_l7acm")
 }],
-"loop": 1,
+"loop": true,
 "name": &"happy",
 "speed": 5.0
 }, {
@@ -380,7 +383,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("54_5128h")
 }],
-"loop": 1,
+"loop": true,
 "name": &"standing npc",
 "speed": 5.0
 }, {
@@ -397,7 +400,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("58_ryxfj")
 }],
-"loop": 1,
+"loop": true,
 "name": &"walk",
 "speed": 5.0
 }]
@@ -446,6 +449,7 @@ scale = Vector2(0.95588243, 0.9558824)
 texture = ExtResource("1_83wcm")
 
 [node name="1" type="CharacterBody2D" parent="." unique_id=159596873]
+collision_layer = 2
 script = ExtResource("2_vawkn")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="1" unique_id=131849688]
@@ -459,6 +463,7 @@ position = Vector2(41, 100.75)
 shape = SubResource("RectangleShape2D_yj75e")
 
 [node name="2" type="CharacterBody2D" parent="." unique_id=2100546804]
+collision_layer = 2
 script = ExtResource("8_qyk5l")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="2" unique_id=330960497]
@@ -473,6 +478,7 @@ shape = SubResource("RectangleShape2D_pg2de")
 
 [node name="3" type="CharacterBody2D" parent="." unique_id=1143756284]
 position = Vector2(0, -9)
+collision_layer = 2
 script = ExtResource("14_v53ig")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="3" unique_id=492173025]
@@ -486,6 +492,7 @@ position = Vector2(260, 283.5)
 shape = SubResource("RectangleShape2D_yiuh7")
 
 [node name="4" type="CharacterBody2D" parent="." unique_id=2057611718]
+collision_layer = 2
 script = ExtResource("20_h2tpw")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="4" unique_id=1273552664]
@@ -499,6 +506,7 @@ position = Vector2(56.5, 555)
 shape = SubResource("RectangleShape2D_6uap5")
 
 [node name="5" type="CharacterBody2D" parent="." unique_id=1139415677]
+collision_layer = 2
 script = ExtResource("26_fx6yj")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="5" unique_id=402692376]
@@ -512,6 +520,7 @@ position = Vector2(211, 559.75)
 shape = SubResource("RectangleShape2D_bybg4")
 
 [node name="6" type="CharacterBody2D" parent="." unique_id=1800805378]
+collision_layer = 2
 script = ExtResource("32_shgfa")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="6" unique_id=1338335246]
@@ -525,6 +534,7 @@ position = Vector2(1105, 164)
 shape = SubResource("RectangleShape2D_c7266")
 
 [node name="7" type="CharacterBody2D" parent="." unique_id=1727449146]
+collision_layer = 2
 script = ExtResource("38_csowa")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="7" unique_id=795147549]
@@ -538,6 +548,7 @@ position = Vector2(944.5, 221.875)
 shape = SubResource("RectangleShape2D_jb7op")
 
 [node name="8" type="CharacterBody2D" parent="." unique_id=2066089574]
+collision_layer = 2
 script = ExtResource("44_2ym3k")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="8" unique_id=1548165743]
@@ -551,6 +562,7 @@ position = Vector2(1109, 559)
 shape = SubResource("RectangleShape2D_8vqng")
 
 [node name="9" type="CharacterBody2D" parent="." unique_id=1433029611]
+collision_layer = 2
 script = ExtResource("50_7dd7u")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="9" unique_id=1396866673]
@@ -564,7 +576,15 @@ position = Vector2(984, 558)
 shape = SubResource("RectangleShape2D_1o3qc")
 
 [node name="10" type="CharacterBody2D" parent="." unique_id=656575678]
+position = Vector2(5, 0)
+collision_layer = 2
 script = ExtResource("56_dvp8g")
+
+[node name="Area2D" type="Area2D" parent="10" unique_id=263736890]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="10/Area2D" unique_id=1464126854]
+position = Vector2(570.75, 162)
+shape = SubResource("RectangleShape2D_qyk5l")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="10" unique_id=138071534]
 position = Vector2(567, 161)

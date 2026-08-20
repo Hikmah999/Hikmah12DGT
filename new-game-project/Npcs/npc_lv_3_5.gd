@@ -36,7 +36,6 @@ func _physics_process(_delta):
 
 	move_and_slide()
 
-
 func _on_hit_area_body_entered(body: Node2D) -> void:
 	if body.name =="player_2" or body.name =="Player1":
 		get_tree().reload_current_scene()

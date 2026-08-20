@@ -1,29 +1,5 @@
 extends CharacterBody2D
 
-
-const SPEED = 300.0
-const JUMP_VELOCITY = -400.0
-
-
-func _physics_process(delta: float) -> void:
-	# Add the gravity.
-	if not is_on_floor():
-		velocity += get_gravity() * delta
-
-	# Handle jump.
-	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
-		velocity.y = JUMP_VELOCITY
-
-	# Get the input direction and handle the movement/deceleration.
-	# As good practice, you should replace UI actions with custom gameplay actions.
-	var direction := Input.get_axis("ui_left", "ui_right")
-	if direction:
-		velocity.x = direction * SPEED
-	else:
-		velocity.x = move_toward(velocity.x, 0, SPEED)
-
-	move_and_slide()
-	
 var is_happy: bool = false
 
 func  make_happy() -> void:
@@ -32,5 +8,45 @@ func  make_happy() -> void:
 	
 	is_happy = true
 	$AnimatedSprite2D.play("happy")
-	
+
 	get_tree().current_scene.npc_became_happy()
+
+@export var speed: float = 200.0
+@export var move_distance: float = 150.0
+
+@onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
+
+var direction: float = -1.0
+var start_x: float
+
+
+func _ready():
+	start_x = global_position.x
+	animated_sprite.play("walking")
+
+
+func _physics_process(_delta):
+
+	velocity.x = direction * speed
+
+	# Go right after reaching the left limit
+	if global_position.x <= start_x - move_distance:
+		direction = 1.0
+
+	# Go left after reaching the right limit
+	elif global_position.x >= start_x + move_distance:
+		direction = -1.0
+
+	# Flip sprite to face movement direction
+	if direction > 0:
+		animated_sprite.flip_h = false
+	else:
+		animated_sprite.flip_h = true
+
+	animated_sprite.play("walk")
+
+	move_and_slide()
+
+func _on_area_2d_body_entered(body: Node2D) -> void:
+	if body.name =="player_2" or body.name =="Player1":
+		get_tree().reload_current_scene()
