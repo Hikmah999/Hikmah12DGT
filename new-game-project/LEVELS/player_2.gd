@@ -66,3 +66,4 @@ func throw_object() -> void:
 		throw_direction = -1.0
 		
 	projectile.setup(throw_direction)
+	

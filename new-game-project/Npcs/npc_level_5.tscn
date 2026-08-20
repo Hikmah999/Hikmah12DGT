@@ -75,7 +75,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("2_i7kwc")
 }],
-"loop": true,
+"loop": 1,
 "name": &"happy",
 "speed": 5.0
 }, {
@@ -92,7 +92,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("6_hxgse")
 }],
-"loop": true,
+"loop": 1,
 "name": &"standing npc",
 "speed": 5.0
 }]
@@ -106,7 +106,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("7_dfh0b")
 }],
-"loop": true,
+"loop": 1,
 "name": &"happy",
 "speed": 5.0
 }, {
@@ -123,7 +123,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("11_m1w1i")
 }],
-"loop": true,
+"loop": 1,
 "name": &"standing npc",
 "speed": 5.0
 }]
@@ -137,7 +137,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("12_l7agd")
 }],
-"loop": true,
+"loop": 1,
 "name": &"happy",
 "speed": 5.0
 }, {
@@ -154,7 +154,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("16_o63t8")
 }],
-"loop": true,
+"loop": 1,
 "name": &"standing npc",
 "speed": 5.0
 }]
@@ -168,7 +168,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("17_vawkn")
 }],
-"loop": true,
+"loop": 1,
 "name": &"happy",
 "speed": 5.0
 }, {
@@ -185,7 +185,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("21_h2tpw")
 }],
-"loop": true,
+"loop": 1,
 "name": &"standing npc",
 "speed": 5.0
 }]
@@ -199,7 +199,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("22_fx6yj")
 }],
-"loop": true,
+"loop": 1,
 "name": &"happy",
 "speed": 5.0
 }, {
@@ -216,7 +216,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("26_7dd7u")
 }],
-"loop": true,
+"loop": 1,
 "name": &"standing npc",
 "speed": 5.0
 }]
@@ -230,7 +230,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("27_dvp8g")
 }],
-"loop": true,
+"loop": 1,
 "name": &"happy",
 "speed": 5.0
 }, {
@@ -247,7 +247,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("31_qppx6")
 }],
-"loop": true,
+"loop": 1,
 "name": &"standing npc",
 "speed": 5.0
 }]
@@ -261,7 +261,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("32_xbcw6")
 }],
-"loop": true,
+"loop": 1,
 "name": &"happy",
 "speed": 5.0
 }, {
@@ -278,7 +278,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("36_2kwat")
 }],
-"loop": true,
+"loop": 1,
 "name": &"standing npc",
 "speed": 5.0
 }]
@@ -292,7 +292,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("37_cp7rc")
 }],
-"loop": true,
+"loop": 1,
 "name": &"happy",
 "speed": 5.0
 }, {
@@ -309,7 +309,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("41_dvpt1")
 }],
-"loop": true,
+"loop": 1,
 "name": &"standing npc",
 "speed": 5.0
 }]
@@ -323,7 +323,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("42_i63ls")
 }],
-"loop": true,
+"loop": 1,
 "name": &"happy",
 "speed": 5.0
 }, {
@@ -340,7 +340,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("46_v4iye")
 }],
-"loop": true,
+"loop": 1,
 "name": &"standing npc",
 "speed": 5.0
 }]
@@ -363,7 +363,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("50_l7acm")
 }],
-"loop": true,
+"loop": 1,
 "name": &"happy",
 "speed": 5.0
 }, {
@@ -380,7 +380,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("54_5128h")
 }],
-"loop": true,
+"loop": 1,
 "name": &"standing npc",
 "speed": 5.0
 }, {
@@ -397,7 +397,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("58_ryxfj")
 }],
-"loop": true,
+"loop": 1,
 "name": &"walk",
 "speed": 5.0
 }]
@@ -572,7 +572,7 @@ sprite_frames = SubResource("SpriteFrames_2t31x")
 animation = &"standing npc"
 autoplay = "standing npc"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="10" unique_id=1720526653]
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="10" unique_id=1720526653]
 position = Vector2(568.5, 163)
 shape = SubResource("RectangleShape2D_a7t48")
 

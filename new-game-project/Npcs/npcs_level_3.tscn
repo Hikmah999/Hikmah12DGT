@@ -26,7 +26,7 @@
 [ext_resource type="Texture2D" uid="uid://jjl12ejehvab" path="res://character level 3/PumpkinDuse IDLE-4.png.png" id="20_ce5rq"]
 [ext_resource type="Texture2D" uid="uid://notxrjwy5n66" path="res://npcs turn happy/Happy PumpkinDuse-1.png.png" id="21_urpif"]
 [ext_resource type="Texture2D" uid="uid://dmvhs4jv4ii7h" path="res://main villian LV3/1x4 IDLE-1.png.png" id="26_af10a"]
-[ext_resource type="Script" uid="uid://c254y7qwf28ws" path="res://Npcs/npc_l_3_5.gd" id="26_w3p6x"]
+[ext_resource type="Script" uid="uid://durty11154mkq" path="res://Npcs/npc_lv_3_5.gd" id="26_w3p6x"]
 [ext_resource type="Texture2D" uid="uid://ctht78y7jqesx" path="res://main villian LV3/1x4 IDLE-2.png.png" id="27_w3p6x"]
 [ext_resource type="Texture2D" uid="uid://bbyfachsx3i3f" path="res://main villian LV3/1x4 IDLE-3.png.png" id="28_20d4d"]
 [ext_resource type="Texture2D" uid="uid://cpeww1oictxme" path="res://main villian LV3/1x4 IDLE-4.png.png" id="29_jghys"]
@@ -41,7 +41,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("3_lo0lo")
 }],
-"loop": true,
+"loop": 1,
 "name": &"happy",
 "speed": 5.0
 }, {
@@ -58,7 +58,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("5_hkbw4")
 }],
-"loop": true,
+"loop": 1,
 "name": &"standing npcs",
 "speed": 5.0
 }]
@@ -72,7 +72,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("9_x74ad")
 }],
-"loop": true,
+"loop": 1,
 "name": &"happy",
 "speed": 5.0
 }, {
@@ -89,7 +89,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("10_urpif")
 }],
-"loop": true,
+"loop": 1,
 "name": &"standing npcs",
 "speed": 5.0
 }]
@@ -103,7 +103,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("15_7mm61")
 }],
-"loop": true,
+"loop": 1,
 "name": &"happy",
 "speed": 5.0
 }, {
@@ -120,7 +120,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("15_af10a")
 }],
-"loop": true,
+"loop": 1,
 "name": &"standing npcs",
 "speed": 5.0
 }]
@@ -134,7 +134,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("21_urpif")
 }],
-"loop": true,
+"loop": 1,
 "name": &"happy",
 "speed": 5.0
 }, {
@@ -151,7 +151,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("20_ce5rq")
 }],
-"loop": true,
+"loop": 1,
 "name": &"standing npcs ",
 "speed": 5.0
 }]
@@ -162,7 +162,7 @@ size = Vector2(21.5, 81)
 [sub_resource type="SpriteFrames" id="SpriteFrames_6uap5"]
 animations = [{
 "frames": [],
-"loop": true,
+"loop": 1,
 "name": &"happy",
 "speed": 5.0
 }, {
@@ -179,7 +179,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("29_jghys")
 }],
-"loop": true,
+"loop": 1,
 "name": &"standing npc",
 "speed": 5.0
 }, {
@@ -196,13 +196,16 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("33_8738s")
 }],
-"loop": true,
+"loop": 1,
 "name": &"walking",
 "speed": 5.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_a7t48"]
 size = Vector2(20, 73)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6uap5"]
+size = Vector2(20, 78)
 
 [node name="npcslevel3" type="Node2D" unique_id=2134047930 groups=["npcLv3"]]
 
@@ -272,10 +275,8 @@ position = Vector2(522.25, 318)
 shape = SubResource("RectangleShape2D_3v0ly")
 
 [node name="npc L3 5" type="CharacterBody2D" parent="." unique_id=1434934819 groups=["npcLv3"]]
+position = Vector2(53, -2)
 script = ExtResource("26_w3p6x")
-speed = null
-detection_distance = null
-move_distance = null
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="npc L3 5" unique_id=433194783]
 position = Vector2(879, 542)
@@ -286,3 +287,11 @@ autoplay = "standing npc"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="npc L3 5" unique_id=737383921]
 position = Vector2(880, 538.5)
 shape = SubResource("RectangleShape2D_a7t48")
+
+[node name="HitArea" type="Area2D" parent="npc L3 5" unique_id=1115042086]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="npc L3 5/HitArea" unique_id=2115078017]
+position = Vector2(879, 539)
+shape = SubResource("RectangleShape2D_6uap5")
+
+[connection signal="body_entered" from="npc L3 5/HitArea" to="npc L3 5" method="_on_hit_area_body_entered"]
