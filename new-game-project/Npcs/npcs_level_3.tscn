@@ -200,7 +200,7 @@ animations = [{
 size = Vector2(20, 73)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6uap5"]
-size = Vector2(20, 78)
+size = Vector2(31, 78)
 
 [node name="npcslevel3" type="Node2D" unique_id=2134047930 groups=["npcLv3"]]
 
@@ -288,7 +288,7 @@ shape = SubResource("RectangleShape2D_a7t48")
 [node name="HitArea" type="Area2D" parent="npc L3 5" unique_id=1115042086]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="npc L3 5/HitArea" unique_id=2115078017]
-position = Vector2(879, 539)
+position = Vector2(880.5, 539)
 shape = SubResource("RectangleShape2D_6uap5")
 
 [connection signal="body_entered" from="npc L3 5/HitArea" to="npc L3 5" method="_on_hit_area_body_entered"]

@@ -99,6 +99,7 @@ offset_left = 330.0
 offset_top = -4.0
 offset_right = 830.0
 offset_bottom = 121.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_mlky3")
 theme_override_font_sizes/font_size = 100
 text = "LEVEL 3"

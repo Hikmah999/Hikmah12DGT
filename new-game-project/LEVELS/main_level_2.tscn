@@ -69,7 +69,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("4_exs6h")
 }],
-"loop": 1,
+"loop": true,
 "name": &"happy",
 "speed": 5.0
 }, {
@@ -86,7 +86,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("7_p12xl")
 }],
-"loop": 1,
+"loop": true,
 "name": &"standing npcs",
 "speed": 5.0
 }]
@@ -100,7 +100,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("10_mn4dp")
 }],
-"loop": 1,
+"loop": true,
 "name": &"happy",
 "speed": 5.0
 }, {
@@ -117,7 +117,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("12_f2lc7")
 }],
-"loop": 1,
+"loop": true,
 "name": &"standing npcs",
 "speed": 5.0
 }]
@@ -131,7 +131,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("16_p12xl")
 }],
-"loop": 1,
+"loop": true,
 "name": &"happy",
 "speed": 5.0
 }, {
@@ -148,7 +148,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("17_l3tiq")
 }],
-"loop": 1,
+"loop": true,
 "name": &"standing npcs",
 "speed": 5.0
 }]
@@ -278,6 +278,7 @@ offset_left = 315.0
 offset_top = 1.0
 offset_right = 815.0
 offset_bottom = 126.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("22_p12xl")
 theme_override_font_sizes/font_size = 100
 text = "LEVEL 2"

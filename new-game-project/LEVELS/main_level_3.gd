@@ -8,7 +8,7 @@ func npc_became_happy() -> void:
 	
 	happy_npcs += 1
 	
-	if happy_npcs >= 5:
+	if happy_npcs >= 4:
 		level_finished = true
 		
 		print("ALL NPCS ARE HAPPY - LEVEL COMPLETE!")

@@ -642,3 +642,5 @@ shape = SubResource("RectangleShape2D_o63t8")
 [node name="CollisionShape2D7" type="CollisionShape2D" parent="box panels" unique_id=125975773]
 position = Vector2(573.25, 509.25)
 shape = SubResource("RectangleShape2D_vawkn")
+
+[connection signal="body_entered" from="10/Area2D" to="10" method="_on_area_2d_body_entered"]

@@ -1,16 +1,5 @@
 extends CharacterBody2D
 
-var is_happy: bool = false
-
-func  make_happy() -> void:
-	if is_happy:
-		return
-	
-	is_happy = true
-	$AnimatedSprite2D.play("happy")
-
-	get_tree().current_scene.npc_became_happy()
-
 @export var speed: float = 200.0
 @export var move_distance: float = 150.0
 
@@ -22,7 +11,7 @@ var start_x: float
 
 func _ready():
 	start_x = global_position.x
-	animated_sprite.play("walking")
+	animated_sprite.play("walk")
 
 
 func _physics_process(_delta):

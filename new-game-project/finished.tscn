@@ -1,5 +1,9 @@
 [gd_scene format=3 uid="uid://bjpxqyx7w44jc"]
 
+[ext_resource type="Texture2D" uid="uid://b61lwulp0xegx" path="res://level images/Screenshot 2026-08-18 132503.png" id="1_vcwi5"]
+[ext_resource type="FontFile" uid="uid://kakemuqg7gk7" path="res://I-pixel-u.ttf" id="2_y5wvf"]
+[ext_resource type="Script" uid="uid://b4n4v1r42e0k4" path="res://back_to_menu.gd" id="3_pqf2d"]
+
 [node name="finished" type="Control" unique_id=590118460]
 layout_mode = 3
 anchors_preset = 15
@@ -8,8 +12,31 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
+[node name="Screenshot20260818132503" type="Sprite2D" parent="." unique_id=165848361]
+position = Vector2(574.25, 322.75)
+scale = Vector2(1.0401987, 1.0377207)
+texture = ExtResource("1_vcwi5")
+
 [node name="Label" type="Label" parent="." unique_id=2049810249]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
-text = "CONGRADULATIONS YOU HAVE FINISHED ALL LEVELS "
+offset_left = 43.0
+offset_top = 33.0
+offset_right = 1114.0
+offset_bottom = 354.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_y5wvf")
+theme_override_font_sizes/font_size = 84
+text = " CONGRADULATIONS 
+YOU HAVE FINISHED 
+      ALL LEVELS "
+
+[node name="back to menu" type="Button" parent="." unique_id=457629946]
+layout_mode = 0
+offset_left = 356.0
+offset_top = 433.0
+offset_right = 806.0645
+offset_bottom = 542.0
+text = "BACK TO MENU"
+script = ExtResource("3_pqf2d")
+
+[connection signal="pressed" from="back to menu" to="back to menu" method="_on_pressed"]
